@@ -95,7 +95,7 @@ function injectFooter() {
             Ashvem Beach Road, opp. Papa Jolly<br>
             Morjim, Goa 403512<br>
             Open: 8am – 11pm daily<br><br>
-            <strong style="color:var(--gold)">Goa (WhatsApp):</strong> <a href="https://wa.me/919881287132" target="_blank" rel="noopener" style="color:var(--gold)">98812 87132</a><br><strong style="color:var(--gold)">Srinagar:</strong> <a href="tel:7889371292" style="color:var(--gold)">7889371292</a>
+            <strong style="color:var(--gold)">Goa (WhatsApp):</strong> <a href="https://wa.me/919881287132" target="_blank" rel="noopener" style="color:var(--gold)">98812 87132</a><br><strong style="color:var(--gold)">Srinagar:</strong> <a href="tel:9881287132" style="color:var(--gold)">9881287132</a>
           </div>
         </div>
       </div>
