@@ -47,11 +47,19 @@ function injectNavbar(activePage) {
   `;
   document.body.insertBefore(nav, document.body.firstChild);
 
+  // Close button for mobile drawer
+  const closeBtn = `<button class="nav-mobile-close" id="nav-mobile-close" aria-label="Close menu">&times;</button>`;
+
   const mobileMenu = document.createElement('div');
   mobileMenu.className = 'nav-mobile';
   mobileMenu.id = 'nav-mobile';
-  mobileMenu.innerHTML = mobileHTML;
+  mobileMenu.innerHTML = closeBtn + mobileHTML;
   document.body.appendChild(mobileMenu);
+
+  const overlay = document.createElement('div');
+  overlay.className = 'nav-mobile-overlay';
+  overlay.id = 'nav-mobile-overlay';
+  document.body.appendChild(overlay);
 }
 
 /* ── Footer HTML ──────────────────────────────────── */
@@ -61,12 +69,12 @@ function injectFooter() {
   footer.innerHTML = `
     <div class="container">
       <div class="footer-grid">
-        <div>
+        <div class="footer-column">
           <div class="footer-logo-name">Exotic Collection</div>
           <div class="footer-tagline">"Where Heritage Meets the World."</div>
           <p class="footer-desc">Handmade platinum, gold &amp; silver jewellery set with genuine rubies, emeralds &amp; sapphires. Authentic Pashmina shawls. Two boutiques — Artisan Boutique and Morjim, Goa.</p>
         </div>
-        <div>
+        <div class="footer-column">
           <div class="footer-heading">Explore</div>
           <ul class="footer-links">
             <li><a href="collections.html">Jewellery Collections</a></li>
@@ -77,7 +85,7 @@ function injectFooter() {
             <li><a href="https://wa.me/7889371292" target="_blank" rel="noopener">WhatsApp Us</a></li>
           </ul>
         </div>
-        <div>
+        <div class="footer-column">
           <div class="footer-heading">Find Us</div>
           <div class="footer-address">
             <strong style="color:var(--gold);font-family:var(--font-display);font-style:italic">Artisan Boutique, Heritage</strong><br>

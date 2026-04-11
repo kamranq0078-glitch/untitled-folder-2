@@ -1,20 +1,35 @@
+/* ================================================
+   EXOTIC COLLECTION — Collections Styles
+   Mobile-First Architecture
+   ================================================ */
+
 /* ─── Filters ───────────────────────────────────── */
 .filters-section {
   background: var(--bg-surface);
   border-bottom: var(--border-gold);
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   position: sticky;
   top: 72px;
   z-index: 50;
   backdrop-filter: blur(8px);
 }
+
 .filter-tabs {
-  display: flex;
+  display: flex !important;
+  flex-wrap: nowrap !important;
   gap: 0.5rem;
-  flex-wrap: wrap;
-  align-items: center;
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  padding: 0 1.25rem;
+  scrollbar-width: none;
 }
+
+.filter-tabs::-webkit-scrollbar { display: none; }
+
 .filter-tab {
+  flex-shrink: 0;
+  scroll-snap-align: start;
   background: transparent;
   border: 1px solid rgba(201,168,76,0.2);
   border-radius: var(--radius-full);
@@ -23,19 +38,26 @@
   font-size: 0.62rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  padding: 0.38rem 0.9rem;
+  padding: 8px 16px;
   cursor: pointer;
   transition: all var(--transition-fast);
   white-space: nowrap;
 }
-.filter-tab:hover {
-  border-color: rgba(201,168,76,0.45);
-  color: var(--gold);
-}
+
 .filter-tab.active {
   background: rgba(201,168,76,0.1);
   border-color: var(--gold);
   color: var(--gold);
+}
+
+@media (min-width: 600px) {
+  .filter-tabs { flex-wrap: wrap !important; overflow: visible !important; }
+}
+
+@media (min-width: 769px) {
+  .filters-section { padding: 1.5rem 0; }
+  .filter-tabs { padding: 0; }
+  .filter-tab { padding: 0.38rem 0.9rem; }
 }
 
 /* ─── Product Grid ──────────────────────────────── */
@@ -43,16 +65,48 @@
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 1.75rem;
 }
 
-.product-card { display: flex; flex-direction: column; }
+@media (min-width: 500px) {
+  .product-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+}
+
+@media (min-width: 769px) {
+  .product-grid { grid-template-columns: repeat(3, 1fr); gap: 1.75rem; }
+}
+
+.product-card { display: flex; flex-direction: column; width: 100%; }
 
 .product-img {
-  aspect-ratio: 1;
+  width: 100%;
+  aspect-ratio: 1/1;
   position: relative;
 }
+
+.product-info {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.product-name {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-style: italic;
+  color: var(--pearl);
+}
+
+@media (min-width: 769px) {
+  .product-info { padding: 1.25rem; }
+  .product-name { font-size: 1.1rem; }
+}
+
+.product-meta { font-size: 0.6rem; }
+.product-badges { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: 0.25rem; }
 
 .product-hover-overlay {
   position: absolute;
@@ -69,47 +123,24 @@
 
 .product-card:hover .product-hover-overlay { opacity: 1; }
 
-.product-hover-name {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: 1.15rem;
-  color: var(--pearl);
-  text-align: center;
-  padding: 0 1rem;
-}
-
-.product-info {
-  padding: 1.25rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  flex: 1;
-}
-
-.product-name {
-  font-family: var(--font-display);
-  font-size: 1.1rem;
-  font-style: italic;
-  color: var(--pearl);
-}
-
-.product-meta { font-size: 0.6rem; }
-
-.product-badges { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: 0.25rem; }
-
 /* ─── Custom CTA ────────────────────────────────── */
 .custom-cta-band {
   background: var(--bg-surface);
   border: var(--border-gold-hover);
-  border-radius: var(--radius-lg);
-  padding: 3rem;
+  border-radius: var(--radius-md);
+  padding: 2rem 1.25rem;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.5rem;
 }
 
-/* ─── Responsive ─────────────────────────────────── */
-@media (max-width: 1024px) { .product-grid { grid-template-columns: repeat(2,1fr); } }
-@media (max-width: 600px)  { .product-grid { grid-template-columns: 1fr; } .custom-cta-band { flex-direction:column; text-align:center; } }
+@media (min-width: 769px) {
+  .custom-cta-band {
+    padding: 3rem;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+    border-radius: var(--radius-lg);
+  }
+}

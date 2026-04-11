@@ -16,17 +16,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ── Mobile menu ───────────────────────────── */
   const hamburger = document.getElementById('nav-hamburger');
+  const closeBtn = document.getElementById('nav-mobile-close');
   const mobileMenu = document.getElementById('nav-mobile');
-  if (hamburger && mobileMenu) {
-    hamburger.addEventListener('click', () => {
-      mobileMenu.classList.toggle('open');
-      document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
-    });
+  const overlay = document.getElementById('nav-mobile-overlay');
+
+  if (hamburger && mobileMenu && overlay) {
+    const toggleMenu = (open) => {
+      mobileMenu.classList.toggle('open', open);
+      overlay.classList.toggle('visible', open);
+      document.body.style.overflow = open ? 'hidden' : '';
+    };
+
+    hamburger.addEventListener('click', () => toggleMenu(true));
+    if (closeBtn) closeBtn.addEventListener('click', () => toggleMenu(false));
+    overlay.addEventListener('click', () => toggleMenu(false));
+
     mobileMenu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.remove('open');
-        document.body.style.overflow = '';
-      });
+      link.addEventListener('click', () => toggleMenu(false));
     });
   }
 
@@ -85,15 +91,21 @@ document.addEventListener('DOMContentLoaded', () => {
     requestAnimationFrame(step);
   }
 
-  /* ── Hero parallax ─────────────────────────── */
+  /* ── Hero parallax (Disabled for mobile) ───── */
   const heroBg = document.querySelector('.hero-parallax');
   if (heroBg) {
     const maxShift = 30;
     const onParallax = () => {
+      if (window.innerWidth < 769) {
+        heroBg.style.transform = 'none';
+        return;
+      }
       const pct = Math.min(window.scrollY / window.innerHeight, 1);
       heroBg.style.transform = `translateY(${pct * maxShift}px) scale(1.08)`;
     };
     window.addEventListener('scroll', onParallax, { passive: true });
+    // Initial check
+    if (window.innerWidth < 769) heroBg.style.transform = 'none';
   }
 
   /* ── Smooth scroll for anchor links ────────── */

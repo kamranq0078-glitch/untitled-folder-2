@@ -1,18 +1,90 @@
+/* ================================================
+   EXOTIC COLLECTION — Stores Styles
+   Mobile-First Architecture
+   ================================================ */
+
 .store-section { background: var(--bg-primary); }
-.store-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
-.store-layout-reverse { }
-.store-layout-reverse .store-details { order: 1; }
-.store-layout-reverse .store-img { order: 2; }
-.store-img { height: 520px; border-radius: var(--radius-md); overflow: hidden; position: relative; }
-.store-img img { border-radius: var(--radius-md); }
+
+.store-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.store-img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  height: auto;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+}
+
+.store-details { padding: 20px; }
+
+@media (min-width: 769px) {
+  .store-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+  .store-layout-reverse .store-details { order: 1; }
+  .store-layout-reverse .store-img { order: 2; }
+  .store-img { height: 520px; aspect-ratio: auto; }
+  .store-details { padding: 0; }
+}
+
+.store-img img { border-radius: var(--radius-md); width: 100%; height: 100%; object-fit: cover; }
 .store-img-label { position: absolute; bottom: 1.25rem; left: 1.25rem; z-index: 2; }
-.store-tagline { font-family: var(--font-display); font-style: italic; font-size: 1.15rem; color: var(--muted); }
-.store-desc { font-size: .9rem; color: var(--muted); line-height: 1.9; margin-bottom: 1.5rem; }
-.store-info-table { display: flex; flex-direction: column; gap: .85rem; padding: 1.5rem; background: var(--bg-elevated); border: var(--border-gold); border-radius: var(--radius-md); }
-.store-info-row { display: flex; gap: 1.5rem; align-items: flex-start; }
-.store-info-label { min-width: 80px; padding-top: .15rem; flex-shrink: 0; }
-.store-info-value { font-size: .87rem; color: var(--pearl); line-height: 1.7; }
-.store-getting-here { margin-top: 2rem; padding: 1.5rem; border: var(--border-gold); border-radius: var(--radius-md); background: rgba(201,168,76,0.03); }
+
+.store-tagline { font-family: var(--font-display); font-style: italic; font-size: 1.15rem; color: var(--muted); margin-bottom: 1rem; }
+.store-desc { font-size: .9rem; color: var(--muted); line-height: 1.8; margin-bottom: 1.5rem; }
+
+.store-info-table {
+  display: flex;
+  flex-direction: column;
+  gap: .85rem;
+  padding: 1.25rem;
+  background: var(--bg-elevated);
+  border: var(--border-gold);
+  border-radius: var(--radius-md);
+}
+
+.store-info-row { display: flex; flex-direction: column; gap: 0.25rem; }
+@media (min-width: 425px) { .store-info-row { flex-direction: row; gap: 1rem; } }
+
+.store-info-label { min-width: 80px; flex-shrink: 0; }
+.store-info-value { font-size: .87rem; color: var(--pearl); line-height: 1.6; }
+
+.store-details .btn { width: 100%; height: 48px; justify-content: center; margin-bottom: 0.75rem; }
+@media (min-width: 769px) { .store-details .btn { width: auto; margin-right: 1rem; } }
+
+.store-getting-here {
+  margin-top: 2rem;
+  padding: 1.25rem;
+  border: var(--border-gold);
+  border-radius: var(--radius-md);
+  background: rgba(201,168,76,0.03);
+}
+
 .visit-cta-section { background: var(--bg-card); border-top: var(--border-gold); }
-.visit-cta-block { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 3rem 2rem; background: var(--bg-surface); border: var(--border-gold-hover); border-radius: var(--radius-lg); }
-@media(max-width:1024px){ .store-layout { grid-template-columns: 1fr; gap: 2.5rem; } .store-img { height: 320px; } .store-layout-reverse .store-details,.store-layout-reverse .store-img { order: unset; } }
+
+.visit-cta-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2.5rem 1.25rem;
+  background: var(--bg-surface);
+  border: var(--border-gold-hover);
+  border-radius: var(--radius-md);
+}
+
+@media (min-width: 769px) {
+  .visit-cta-block { padding: 3rem 2rem; border-radius: var(--radius-lg); }
+}
+
+/* Map Embed Scaling */
+iframe[title*="Map"] {
+  height: 200px !important;
+}
+
+@media (min-width: 769px) {
+  iframe[title*="Map"] { height: 280px !important; }
+}
