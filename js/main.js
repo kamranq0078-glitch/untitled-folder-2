@@ -49,6 +49,8 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ── Scroll reveal (IntersectionObserver) ──── */
   const reveals = document.querySelectorAll('.reveal');
   if (reveals.length) {
+    // More aggressive reveal for mobile to prevent "black gaps"
+    const isMobile = window.innerWidth < 769;
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -56,7 +58,10 @@ document.addEventListener('DOMContentLoaded', () => {
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+    }, { 
+      threshold: isMobile ? 0.01 : 0.12, 
+      rootMargin: isMobile ? '10% 0px 10% 0px' : '0px 0px -60px 0px' 
+    });
     reveals.forEach(el => observer.observe(el));
   }
 

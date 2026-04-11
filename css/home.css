@@ -415,3 +415,11 @@
 
 /* ─── Utility ───────────────────────────────────── */
 .text-center { text-align: center; }
+
+/* Mobile Reveal Fallback */
+@media (max-width: 768.8px) {
+  .reveal {
+    opacity: 0.1; /* Start slightly visible to trigger lazy loading if needed */
+    transition: opacity 0.8s var(--ease-luxury), transform 0.8s var(--ease-luxury);
+  }
+}
