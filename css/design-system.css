@@ -317,4 +317,8 @@ button { cursor: pointer; min-height: 44px; border: none; background: none; }
 .overlay-dark{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(7,6,10,.35) 0%,rgba(7,6,10,.85) 100%)}
 
 /* ─── Responsive ─────────────────────────────────── */
+@media (max-width: 768.8px) {
+  .hide-mobile { display: none !important; }
+}
+
 @media(max-width:1024px){.container{padding:0 1.5rem}}

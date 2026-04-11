@@ -111,67 +111,112 @@
 
 /* ─── Gem Category Bar ──────────────────────────── */
 .gem-bar {
-  background: var(--bg-surface);
+  background: var(--bg-primary);
   border-top: var(--border-gold);
   border-bottom: var(--border-gold);
-  overflow: hidden;
+  position: relative;
+  z-index: 5;
 }
 
 .gem-grid {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none;
-  gap: 1px;
-  padding: 0 1.25rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 2.5rem 1.25rem;
 }
 
-.gem-grid::-webkit-scrollbar { display: none; }
-
 .gem-card {
-  flex: 0 0 140px;
-  scroll-snap-align: start;
+  position: relative;
   background: var(--bg-card);
+  border: var(--border-gold);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: all var(--transition-medium);
   display: flex;
   flex-direction: column;
+}
+
+.gem-card:hover { 
+  border-color: var(--gold);
+  box-shadow: 0 0 25px rgba(201,168,76,0.15);
+  transform: translateY(-4px);
 }
 
 .gem-card-img {
-  height: 120px;
+  height: 140px;
   width: 100%;
+  position: relative;
 }
 
-@media (min-width: 375px) {
-  .gem-card-img { height: 130px; }
+.gem-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
 }
+
+.gem-card:hover .gem-card-img img { transform: scale(1.08); }
+
+.gem-card-body {
+  padding: 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: center;
+  text-align: center;
+  background: rgba(14, 12, 20, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.gem-dot { 
+  width: 8px; height: 8px; border-radius: 50%; 
+  margin-bottom: 0.2rem; 
+  box-shadow: 0 0 10px currentColor;
+  transition: transform var(--transition-fast);
+}
+
+.gem-card:hover .gem-dot { transform: scale(1.5); }
+
+.gem-name { 
+  font-family: var(--font-display); 
+  font-size: 1.1rem; 
+  font-style: italic; 
+  letter-spacing: 0.1em;
+  color: var(--gold);
+}
+
+.gem-sub { font-size: 0.65rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
 
 @media (min-width: 425px) {
-  .gem-card { flex-basis: 160px; }
+  .gem-grid { gap: 20px; padding: 3rem 2rem; }
+  .gem-card-img { height: 160px; }
 }
 
 @media (min-width: 769px) {
+  .gem-bar { background: var(--bg-surface); }
   .gem-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    overflow: visible;
+    gap: 1px;
     padding: 0;
   }
-  .gem-card { flex: none; }
+  .gem-card { border: none; border-radius: 0; background: var(--bg-card); }
   .gem-card-img { height: 180px; }
+  .gem-card-body { 
+    position: static; 
+    padding: 1rem; 
+    background: transparent; 
+    backdrop-filter: none;
+    border-top: none; 
+  }
+  .gem-name { font-size: 1rem; color: var(--pearl); }
 }
-
-.gem-card-body {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-  align-items: center;
-  text-align: center;
-}
-
-.gem-dot { width: 8px; height: 8px; border-radius: 50%; margin-bottom: 0.2rem; box-shadow: 0 0 8px currentColor; }
-.gem-name { font-family: var(--font-display); font-size: 1rem; font-style: italic; letter-spacing: 0.06em; }
-.gem-sub { font-size: 0.6rem; }
 
 /* ─── Featured Collection ───────────────────────── */
 .featured-collection { background: var(--bg-primary); }
