@@ -70,11 +70,12 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 1.5rem 0.75rem;
   background: var(--bg-surface);
   border: var(--border-gold-hover);
   border-radius: var(--radius-md);
   width: 100%;
+  box-sizing: border-box;
 }
 
 @media (min-width: 375px) {
@@ -92,4 +93,19 @@ iframe[title*="Map"] {
 
 @media (min-width: 769px) {
   iframe[title*="Map"] { height: 280px !important; }
+}
+
+.visit-cta-block .btn {
+  width: 100%;
+  height: auto;
+  min-height: 48px;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+@media (min-width: 425px) {
+  .visit-cta-block { flex-direction: column; }
+}
+@media (min-width: 769px) {
+  .visit-cta-block { flex-direction: row; gap: 2rem; }
+  .visit-cta-block .btn { width: auto; margin-bottom: 0; }
 }

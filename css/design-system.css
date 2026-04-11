@@ -5,7 +5,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap');
 
-html, body {
+html, h1, h2, h3, h4, .display-xl, .display-lg, .display-md {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+body {
   overflow-x: hidden;
   width: 100%;
   max-width: 100%;
@@ -62,6 +68,12 @@ img, video, iframe {
   :root { font-size: 16px; }
 }
 
+h1, h2, h3, h4, .display-xl, .display-lg, .display-md {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
 body {
   background-color: var(--bg-primary);
   color: var(--pearl);
@@ -88,7 +100,7 @@ button { cursor: pointer; min-height: 44px; border: none; background: none; }
 .text-muted{color:var(--muted)}
 .text-pearl{color:var(--pearl)}
 
-.container{width:100%;max-width:1280px;margin:0 auto;padding:0 2rem}
+.container{width:100%;max-width:1280px;margin:0 auto;padding:0 1rem}@media(min-width:769px){.container{padding:0 2rem}}
 .container-narrow{width:100%;max-width:860px;margin:0 auto;padding:0 2rem}
 .section{padding:7rem 0}
 .section-sm{padding:4rem 0}
@@ -102,7 +114,7 @@ button { cursor: pointer; min-height: 44px; border: none; background: none; }
 .pill-sapphire{border-color:rgba(42,90,191,.4);color:#6a90e8;background:rgba(42,90,191,.06)}
 .pill-white{border-color:rgba(240,236,232,.2);color:var(--pearl);background:rgba(240,236,232,.04)}
 
-.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.75rem;font-family:var(--font-body);font-size:.78rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;border:none;border-radius:var(--radius-sm);transition:all var(--transition-medium);white-space:nowrap}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.75rem;font-family:var(--font-body);font-size:.78rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;border:none;border-radius:var(--radius-sm);transition:all var(--transition-medium);white-space:normal;text-align:center}
 .btn-gold{background:linear-gradient(135deg,var(--gold) 0%,#a8862e 100%);color:var(--bg-primary)}
 .btn-gold:hover{background:linear-gradient(135deg,var(--gold-light) 0%,var(--gold) 100%);box-shadow:var(--glow-gold-strong);transform:translateY(-2px)}
 .btn-outline-gold{background:transparent;color:var(--gold);border:1px solid rgba(201,168,76,.45)}
