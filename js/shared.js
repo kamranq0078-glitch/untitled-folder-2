@@ -8,7 +8,7 @@ function injectWhatsApp(message) {
   const encoded = encodeURIComponent(message || 'Hello, I found Exotic Collection online and would like to know more about your pieces.');
   const btn = document.createElement('a');
   btn.className = 'whatsapp-float';
-  btn.href = `https://wa.me/7889371292?text=${encoded}`;
+  btn.href = `https://wa.me/919881287132?text=${encoded}`;
   btn.target = '_blank';
   btn.rel = 'noopener noreferrer';
   btn.setAttribute('aria-label', 'Chat on WhatsApp');
@@ -82,7 +82,7 @@ function injectFooter() {
             <li><a href="story.html">Our Story</a></li>
             <li><a href="stores.html">Artisan Boutique Store</a></li>
             <li><a href="stores.html#goa">Goa Store</a></li>
-            <li><a href="https://wa.me/7889371292" target="_blank" rel="noopener">WhatsApp Us</a></li>
+            <li><a href="https://wa.me/919881287132" target="_blank" rel="noopener">WhatsApp Us</a></li>
           </ul>
         </div>
         <div class="footer-column">
@@ -95,7 +95,7 @@ function injectFooter() {
             Ashvem Beach Road, opp. Papa Jolly<br>
             Morjim, Goa 403512<br>
             Open: 8am – 11pm daily<br><br>
-            <strong style="color:var(--gold)">Goa (WhatsApp):</strong> <a href="https://wa.me/9881287132" target="_blank" rel="noopener" style="color:var(--gold)">98812 87132</a><br><strong style="color:var(--gold)">Srinagar:</strong> <a href="tel:7889371292" style="color:var(--gold)">7889371292</a>
+            <strong style="color:var(--gold)">Goa (WhatsApp):</strong> <a href="https://wa.me/919881287132" target="_blank" rel="noopener" style="color:var(--gold)">98812 87132</a><br><strong style="color:var(--gold)">Srinagar:</strong> <a href="tel:7889371292" style="color:var(--gold)">7889371292</a>
           </div>
         </div>
       </div>
