@@ -243,15 +243,15 @@ button { cursor: pointer; min-height: 44px; border: none; background: none; }
   visibility: hidden;
   transition: all var(--transition-medium);
 }
-.nav-mobile-overlay.visible { opacity: 1; visibility: visible; }
+
 
 .nav-mobile {
   position: fixed;
   top: 0;
-  right: -300px;
+  right: 0;
   width: 280px;
   height: 100svh;
-  z-index: 999;
+  z-index: 10001;
   background: #07060A;
   display: flex;
   flex-direction: column;
@@ -261,7 +261,7 @@ button { cursor: pointer; min-height: 44px; border: none; background: none; }
   box-shadow: -10px 0 40px rgba(0,0,0,0.5);
 }
 
-.nav-mobile.open { right: 0; }
+
 
 .nav-mobile a {
   font-family: var(--font-display);

@@ -44,7 +44,7 @@ function injectNavbar(activePage) {
   ).join('');
 
   const navHtml = `
-    <input type="checkbox" id="nav-toggle" hidden>
+    <input type="checkbox" id="nav-toggle" style="position:absolute; opacity:0; width:0; height:0; pointer-events:none;">
     <nav class="navbar" id="navbar-main">
       <a href="index.html" class="nav-logo" aria-label="Exotic Collection Home">
         <span class="nav-logo-name">Exotic Collection</span>
