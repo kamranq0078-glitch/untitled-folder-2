@@ -10,9 +10,9 @@
 <link href="css/home.css" media="print" onload="this.media='all'" rel="stylesheet"/>
 <noscript><link href="css/home.css" rel="stylesheet"/></noscript>
 <!-- 5. Primary SEO -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data: blob:; font-src 'self' https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com; connect-src 'self' https://wa.me https://www.google-analytics.com; frame-src https://www.google.com https://maps.google.com;">
-  <title>Exotic Collection | Handmade Kashmir Jewellery &amp; Pashmina | Goa &amp; Srinagar</title>
-<meta content="Handmade platinum, gold &amp; silver jewellery set with rubies, emeralds &amp; sapphires. Authentic Pashmina shawls. Two stores — Morjim Goa &amp; Srinagar Kashmir." name="description"/>
+<meta content="default-src 'self'; img-src 'self' https: data: blob:; font-src 'self' https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com; connect-src 'self' https://wa.me https://www.google-analytics.com; frame-src https://www.google.com https://maps.google.com;" http-equiv="Content-Security-Policy"/>
+<title>Exotic Collection | Handmade Kashmir Jewellery &amp; Pashmina | Goa &amp; Srinagar</title>
+<meta content="Handmade platinum, gold &amp; silver jewellery set with rubies, emeralds &amp; sapphires. Authentic Pashmina shawls. Two stores — Morjim Goa &amp; Srinagar Kashmir." name="description">
 <meta content="index, follow" name="robots"/>
 <link href="https://exoticcollection.in/" rel="canonical"/>
 <meta content="#07060A" name="theme-color"/>
@@ -103,9 +103,9 @@
   "sameAs": ["https://wa.me/919881287132"]
 }
 
-]</script></head>
+]</script></meta></head>
 <body>
-<a href="#main" class="skip-link" style="position: absolute; top: -100%; left: 16px; background: #C9A84C; color: #07060A; padding: 8px 16px; border-radius: 0 0 8px 8px; font-weight: 500; z-index: 10000; transition: top 0.2s;">Skip to main content</a>
+<a class="skip-link" href="#main" style="position: absolute; top: -100%; left: 16px; background: #C9A84C; color: #07060A; padding: 8px 16px; border-radius: 0 0 8px 8px; font-weight: 500; z-index: 10000; transition: top 0.2s;">Skip to main content</a>
 <div id="progress-bar" style="position: fixed; top: 0; left: 0; z-index: 9999; height: 2px; width: 0%; background: #C9A84C; transition: width 0.2s ease; will-change: width;"></div>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
@@ -412,14 +412,17 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 </div>
 </section>
-<script src="js/shared.js?v=2.2" defer></script>
-<script src="js/main.js?v=2.2" defer></script>
+<script defer="" src="js/shared.js?v=2.2"></script>
+<script defer="" src="js/main.js?v=2.2"></script>
 <script>
+  document.addEventListener('DOMContentLoaded', () => {
+
   injectNavbar('index.html');
   injectWhatsApp('Hello, I found Exotic Collection online and would like to know more about your pieces.');
   injectFooter();
-</script>
 
+  });
+</script>
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
@@ -428,6 +431,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 </script>
-
 </body>
 </html>
