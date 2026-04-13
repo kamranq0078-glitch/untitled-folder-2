@@ -4,8 +4,18 @@
    ================================================ */
 
 /* ── WhatsApp float button (injected on all pages) ─ */
-function injectWhatsApp(message) {
-  const encoded = encodeURIComponent(message || 'Hello, I found Exotic Collection online and would like to know more about your pieces.');
+function injectWhatsApp(fallbackMessage) {
+  const WA_MESSAGES = {
+    '/': 'Hello Exotic Collection! I found your website and would love to know more about your jewellery.',
+    '/collections.html': 'Hello! I am browsing your collection and would like to ask about a specific piece.',
+    '/pashmina.html': 'Hello! I am interested in your authentic Pashmina. Can you share more details?',
+    '/story.html': 'Hello! I read about your Kashmir heritage. I would love to learn more.',
+    '/stores.html': 'Hello! I am planning to visit your store. Can you share any details?',
+    '/contact.html': 'Hello! I would like to discuss a custom jewellery order.'
+  };
+  const slug = window.location.pathname.split('/').pop() || '/';
+  const message = WA_MESSAGES['/' + slug] || WA_MESSAGES[slug] || WA_MESSAGES['/'];
+  const encoded = encodeURIComponent(message);
   const btn = document.createElement('a');
   btn.className = 'whatsapp-float';
   btn.href = `https://wa.me/919881287132?text=${encoded}`;
@@ -33,33 +43,27 @@ function injectNavbar(activePage) {
     `<a href="${p.href}">${p.label}</a>`
   ).join('');
 
-  const nav = document.createElement('nav');
-  nav.className = 'navbar';
-  nav.innerHTML = `
-    <a href="index.html" class="nav-logo" aria-label="Exotic Collection Home">
-      <span class="nav-logo-name">Exotic Collection</span>
-      <span class="nav-logo-sub">Est. Heritage · Since 1995</span>
-    </a>
-    <ul class="nav-links">${linksHTML}</ul>
-    <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
+  const navHtml = `
+    <input type="checkbox" id="nav-toggle" hidden>
+    <nav class="navbar" id="navbar-main">
+      <a href="index.html" class="nav-logo" aria-label="Exotic Collection Home">
+        <span class="nav-logo-name">Exotic Collection</span>
+        <span class="nav-logo-sub">Est. Heritage · Since 1995</span>
+      </a>
+      <ul class="nav-links">${linksHTML}</ul>
+      <label for="nav-toggle" class="nav-hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </label>
+    </nav>
+    <div class="nav-mobile" id="nav-mobile">
+      <label for="nav-toggle" class="nav-mobile-close" aria-label="Close menu">&times;</label>
+      ${mobileHTML}
+    </div>
+    <label for="nav-toggle" class="nav-mobile-overlay" id="nav-mobile-overlay"></label>
   `;
-  document.body.insertBefore(nav, document.body.firstChild);
+  // We insert at the start of the body
+  document.body.insertAdjacentHTML('afterbegin', navHtml);
 
-  // Close button for mobile drawer
-  const closeBtn = `<button class="nav-mobile-close" id="nav-mobile-close" aria-label="Close menu">&times;</button>`;
-
-  const mobileMenu = document.createElement('div');
-  mobileMenu.className = 'nav-mobile';
-  mobileMenu.id = 'nav-mobile';
-  mobileMenu.innerHTML = closeBtn + mobileHTML;
-  document.body.appendChild(mobileMenu);
-
-  const overlay = document.createElement('div');
-  overlay.className = 'nav-mobile-overlay';
-  overlay.id = 'nav-mobile-overlay';
-  document.body.appendChild(overlay);
 }
 
 /* ── Footer HTML ──────────────────────────────────── */

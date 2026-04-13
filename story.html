@@ -1,128 +1,173 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Exotic Collection | Our Story | Heritage Jewellery Heritage</title>
-  <meta name="description" content="The story of Exotic Collection — born in the lanes of Artisan Boutique, now reaching the world from Morjim, Goa. Thirty years of handcrafted gemstone jewellery.">
-  <link rel="stylesheet" href="css/design-system.css">
-  <link rel="stylesheet" href="css/story.css">
+<head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><!-- 1. Preconnects -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><!-- 2. Preload hero image -->
+<link as="image" fetchpriority="high" href="/img/heritage-studio.webp" rel="preload"/><!-- 4. Non-critical CSS deferred -->
+<link href="css/design-system.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="css/design-system.css" rel="stylesheet"/></noscript>
+<link href="css/story.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="css/story.css" rel="stylesheet"/></noscript>
+
+<!-- 5. Primary SEO -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data: blob:; font-src 'self' https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com; connect-src 'self' https://wa.me https://www.google-analytics.com; frame-src https://www.google.com https://maps.google.com;">
+  <title>Our Story | Exotic Collection | Kashmir Heritage</title>
+<meta content="Three generations of Kashmiri jewellery artisans. Hand-making platinum and gold pieces set with authentic gemstones." name="description"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://exoticcollection.in/story.html" rel="canonical"/>
+<meta content="#07060A" name="theme-color"/>
+
+<!-- 6. Open Graph -->
+<meta content="website" property="og:type"/>
+<meta content="Our Story | Exotic Collection | Kashmir Heritage" property="og:title"/>
+<meta content="Three generations of Kashmiri jewellery artisans. Hand-making platinum and gold pieces set with authentic gemstones." property="og:description"/>
+<meta content="https://exoticcollection.in/og-image.jpg" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="https://exoticcollection.in/story.html" property="og:url"/>
+<meta content="Exotic Collection" property="og:site_name"/>
+
+<!-- 7. Twitter Card -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Our Story | Exotic Collection | Kashmir Heritage" name="twitter:title"/>
+<meta content="https://exoticcollection.in/og-image.jpg" name="twitter:image"/>
+
+<!-- 8. Favicons -->
+<link href="favicon.ico" rel="icon" sizes="32x32"/>
+<link href="icon.svg" rel="icon" type="image/svg+xml"/>
+<link href="apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="manifest.json" rel="manifest"/>
+
+<!-- 9. Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
 </head>
 <body>
-
+<a href="#main" class="skip-link" style="position: absolute; top: -100%; left: 16px; background: #C9A84C; color: #07060A; padding: 8px 16px; border-radius: 0 0 8px 8px; font-weight: 500; z-index: 10000; transition: top 0.2s;">Skip to main content</a>
+<div id="progress-bar" style="position: fixed; top: 0; left: 0; z-index: 9999; height: 2px; width: 0%; background: #C9A84C; transition: width 0.2s ease; will-change: width;"></div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('progress-bar').style.width = '100%';
+  setTimeout(() => {
+    document.getElementById('progress-bar').style.opacity = '0';
+  }, 400);
+});
+</script>
 <!-- Hero -->
+<main id="main">
 <section class="page-hero" style="height:70vh;min-height:480px">
-  <div class="page-hero-bg" style="background-image:url('img/heritage-studio.png')"></div>
-  <div class="page-hero-overlay"></div>
-  <div class="page-hero-content" style="max-width:780px;margin:0 auto">
-    <div class="pill reveal" style="margin-bottom:1.5rem">✦ Est. Heritage · Since 1995</div>
-    <h1 class="display-xl reveal reveal-delay-1" style="color:var(--pearl)">
-      We started in the lanes<br>
+<div class="page-hero-bg" style="background-image:url('img/heritage-studio.png')"></div>
+<div class="page-hero-overlay"></div>
+<div class="page-hero-content" style="max-width:780px;margin:0 auto">
+<div class="pill reveal" style="margin-bottom:1.5rem">✦ Est. Heritage · Since 1995</div>
+<h1 class="display-xl reveal reveal-delay-1" style="color:var(--pearl)">
+      We started in the lanes<br/>
       of <em class="text-gold">Artisan Boutique.</em>
-    </h1>
-    <div class="gold-divider reveal reveal-delay-2"></div>
-    <p class="section-subtitle reveal reveal-delay-3" style="color:rgba(240,236,232,0.75);font-size:1.1rem;max-width:580px">
+</h1>
+<div class="gold-divider reveal reveal-delay-2"></div>
+<p class="section-subtitle reveal reveal-delay-3" style="color:rgba(240,236,232,0.75);font-size:1.1rem;max-width:580px">
       Where gemstones are not commodities — they are conversations between the earth and the hands that shape them.
     </p>
-  </div>
+</div>
 </section>
-
 <!-- Story Sections -->
 <section class="section story-section">
-  <div class="container-narrow">
-
-    <!-- Origins -->
-    <div class="story-block reveal">
-      <div class="story-eyebrow pill">I — The Heritage Origins</div>
-      <h2 class="display-md story-heading">The Valley That Makes Things by Hand</h2>
-      <div class="gold-divider gold-divider-left"></div>
-      <p class="story-body">Artisan Boutique's old city has been a centre of gemstone craft for over five centuries. In its narrow lanes, families pass down the knowledge of stones — how to read them, how to cut them, how to let the metal hold them without diminishing them. We grew up in this world.</p>
-      <p class="story-body">For us, a ruby is never just a ruby. It is a specific shade of red that exists only in certain seams beneath certain mountains. An emerald is a particular depth of green that has nothing to do with the stone's size and everything to do with its clarity and origin. This is what Heritage taught us.</p>
-    </div>
-
-    <!-- Gems -->
-    <div class="story-block reveal">
-      <div class="story-eyebrow pill">II — The Gemstones</div>
-      <h2 class="display-md story-heading">Why the Source Matters</h2>
-      <div class="gold-divider gold-divider-left"></div>
-      <p class="story-body">Not all rubies are the same. Not all emeralds, not all sapphires. The origin of a gemstone determines its colour, inclusions, and rarity — and this determines its soul.</p>
-      <div class="story-gem-facts">
-        <div class="story-gem-fact">
-          <span class="pill pill-ruby">Ruby</span>
-          <p>Burmese rubies carry a "pigeon blood" red that no synthetic can replicate. We source responsibly from established Burmese and Mozambican dealers with provenance documentation.</p>
-        </div>
-        <div class="story-gem-fact">
-          <span class="pill pill-emerald">Emerald</span>
-          <p>Colombian emeralds are considered the world's finest — a vivid, slightly bluish green that is the benchmark of the category. We personally assess each stone for clarity and saturation.</p>
-        </div>
-        <div class="story-gem-fact">
-          <span class="pill pill-sapphire">Sapphire</span>
-          <p>Heritage sapphires are among the rarest in the world. Ceylon sapphires — our primary source — carry a cornflower blue warmth that is softer and more wearable than their Thai counterparts.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Artisans -->
-    <div class="story-block reveal">
-      <div class="story-eyebrow pill">III — The Artisans</div>
-      <h2 class="display-md story-heading">Hands That Have Never Forgotten</h2>
-      <div class="gold-divider gold-divider-left"></div>
-      <p class="story-body">Our pieces are made by artisans who learned this craft from their fathers, who learned it from theirs. There are no machines involved in the shaping, setting, or finishing of our work. Each solder joint is made by eye. Each prong is bent by hand. Each piece carries the fingerprints of the person who made it — literally.</p>
-      <p class="story-body">We do not mass produce. When a design is complete and the piece is sold, that exact piece will never exist again. A new piece may draw on the same stone type and metal, but its proportions, its setting, its character — will be different. This is what "handmade" actually means.</p>
-    </div>
-
-    <!-- Why Goa -->
-    <div class="story-block reveal">
-      <div class="story-eyebrow pill">IV — Why Goa</div>
-      <h2 class="display-md story-heading">Where Heritage Meets the World</h2>
-      <div class="gold-divider gold-divider-left"></div>
-      <p class="story-body">We opened in Morjim because the world comes through Goa's beaches. Travellers from Russia, Israel, the UK, France, Germany, Brazil — people who wouldn't ordinarily find a jeweller in Artisan Boutique. People who, when they see a genuine handmade ruby pendant on a dark velvet cloth, understand immediately what they're looking at.</p>
-      <p class="story-body">The Goa store is not a dilution of the Heritage identity — it is the extension of it. Everything we sell in Morjim is made in Artisan Boutique. Every stone is sourced and selected by the same eyes that have been doing this for three decades.</p>
-    </div>
-
-    <!-- Promise -->
-    <div class="story-promise-block reveal">
-      <div class="story-eyebrow pill" style="margin-bottom:1.5rem">Our Promise</div>
-      <blockquote class="story-promise-quote">
-        "Every piece we sell is authenticated before it leaves our hands.<br>
-        Every stone is what we say it is.<br>
-        Every shawl passes the ring test in front of you.<br>
-        <em class="text-gold">We have never had a reason to be otherwise."</em>
-      </blockquote>
-      <div class="story-credentials">
-        <div class="story-cred">
-          <div class="story-cred-number text-gold">5.0★</div>
-          <div class="label-mono">Google Rating<br>Both Locations</div>
-        </div>
-        <div class="story-cred">
-          <div class="story-cred-number text-gold">30+</div>
-          <div class="label-mono">Years in the<br>Heritage Craft</div>
-        </div>
-        <div class="story-cred">
-          <div class="story-cred-number text-gold">172+</div>
-          <div class="label-mono">Verified Google<br>Reviews · Goa</div>
-        </div>
-        <div class="story-cred">
-          <div class="story-cred-number text-gold">🌏</div>
-          <div class="label-mono">Clients from<br>40+ Countries</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="text-center reveal" style="margin-top:4rem">
-      <a href="https://wa.me/919881287132?text=Hello%2C+I%27d+like+to+know+more+about+Exotic+Collection+and+its+story." target="_blank" rel="noopener" class="btn btn-whatsapp" style="margin-right:1rem">Chat With Us →</a>
-      <a href="collections.html" class="btn btn-outline-gold">View Collections →</a>
-    </div>
-
-  </div>
+<div class="container-narrow">
+<!-- Origins -->
+<div class="story-block reveal">
+<div class="story-eyebrow pill">I — The Heritage Origins</div>
+<h2 class="display-md story-heading">The Valley That Makes Things by Hand</h2>
+<div class="gold-divider gold-divider-left"></div>
+<p class="story-body">Artisan Boutique's old city has been a centre of gemstone craft for over five centuries. In its narrow lanes, families pass down the knowledge of stones — how to read them, how to cut them, how to let the metal hold them without diminishing them. We grew up in this world.</p>
+<p class="story-body">For us, a ruby is never just a ruby. It is a specific shade of red that exists only in certain seams beneath certain mountains. An emerald is a particular depth of green that has nothing to do with the stone's size and everything to do with its clarity and origin. This is what Heritage taught us.</p>
+</div>
+<!-- Gems -->
+<div class="story-block reveal">
+<div class="story-eyebrow pill">II — The Gemstones</div>
+<h2 class="display-md story-heading">Why the Source Matters</h2>
+<div class="gold-divider gold-divider-left"></div>
+<p class="story-body">Not all rubies are the same. Not all emeralds, not all sapphires. The origin of a gemstone determines its colour, inclusions, and rarity — and this determines its soul.</p>
+<div class="story-gem-facts">
+<div class="story-gem-fact">
+<span class="pill pill-ruby">Ruby</span>
+<p>Burmese rubies carry a "pigeon blood" red that no synthetic can replicate. We source responsibly from established Burmese and Mozambican dealers with provenance documentation.</p>
+</div>
+<div class="story-gem-fact">
+<span class="pill pill-emerald">Emerald</span>
+<p>Colombian emeralds are considered the world's finest — a vivid, slightly bluish green that is the benchmark of the category. We personally assess each stone for clarity and saturation.</p>
+</div>
+<div class="story-gem-fact">
+<span class="pill pill-sapphire">Sapphire</span>
+<p>Heritage sapphires are among the rarest in the world. Ceylon sapphires — our primary source — carry a cornflower blue warmth that is softer and more wearable than their Thai counterparts.</p>
+</div>
+</div>
+</div>
+<!-- Artisans -->
+<div class="story-block reveal">
+<div class="story-eyebrow pill">III — The Artisans</div>
+<h2 class="display-md story-heading">Hands That Have Never Forgotten</h2>
+<div class="gold-divider gold-divider-left"></div>
+<p class="story-body">Our pieces are made by artisans who learned this craft from their fathers, who learned it from theirs. There are no machines involved in the shaping, setting, or finishing of our work. Each solder joint is made by eye. Each prong is bent by hand. Each piece carries the fingerprints of the person who made it — literally.</p>
+<p class="story-body">We do not mass produce. When a design is complete and the piece is sold, that exact piece will never exist again. A new piece may draw on the same stone type and metal, but its proportions, its setting, its character — will be different. This is what "handmade" actually means.</p>
+</div>
+<!-- Why Goa -->
+<div class="story-block reveal">
+<div class="story-eyebrow pill">IV — Why Goa</div>
+<h2 class="display-md story-heading">Where Heritage Meets the World</h2>
+<div class="gold-divider gold-divider-left"></div>
+<p class="story-body">We opened in Morjim because the world comes through Goa's beaches. Travellers from Russia, Israel, the UK, France, Germany, Brazil — people who wouldn't ordinarily find a jeweller in Artisan Boutique. People who, when they see a genuine handmade ruby pendant on a dark velvet cloth, understand immediately what they're looking at.</p>
+<p class="story-body">The Goa store is not a dilution of the Heritage identity — it is the extension of it. Everything we sell in Morjim is made in Artisan Boutique. Every stone is sourced and selected by the same eyes that have been doing this for three decades.</p>
+</div>
+<!-- Promise -->
+<div class="story-promise-block reveal">
+<div class="story-eyebrow pill" style="margin-bottom:1.5rem">Our Promise</div>
+<blockquote class="story-promise-quote">
+        "Every piece we sell is authenticated before it leaves our hands.<br/>
+        Every stone is what we say it is.<br/>
+        Every shawl passes the ring test in front of you.<br/>
+<em class="text-gold">We have never had a reason to be otherwise."</em>
+</blockquote>
+<div class="story-credentials">
+<div class="story-cred">
+<div class="story-cred-number text-gold">5.0★</div>
+<div class="label-mono">Google Rating<br/>Both Locations</div>
+</div>
+<div class="story-cred">
+<div class="story-cred-number text-gold">30+</div>
+<div class="label-mono">Years in the<br/>Heritage Craft</div>
+</div>
+<div class="story-cred">
+<div class="story-cred-number text-gold">172+</div>
+<div class="label-mono">Verified Google<br/>Reviews · Goa</div>
+</div>
+<div class="story-cred">
+<div class="story-cred-number text-gold">🌏</div>
+<div class="label-mono">Clients from<br/>40+ Countries</div>
+</div>
+</div>
+</div>
+<div class="text-center reveal" style="margin-top:4rem">
+<a class="btn btn-whatsapp" href="https://wa.me/919881287132?text=Hello%2C+I%27d+like+to+know+more+about+Exotic+Collection+and+its+story." rel="noopener" style="margin-right:1rem" target="_blank">Chat With Us →</a>
+<a class="btn btn-outline-gold" href="collections.html">View Collections →</a>
+</div>
+</div>
 </section>
-
-<script src="js/shared.js?v=2.2"></script>
-<script src="js/main.js?v=2.2"></script>
+<script src="js/shared.js?v=2.2" defer></script>
+<script src="js/main.js?v=2.2" defer></script>
 <script>
   injectNavbar('story.html');
   injectWhatsApp("Hello, I'd like to know more about Exotic Collection and your story.");
   injectFooter();
 </script>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+        .catch(err => console.warn('SW failed:', err));
+    });
+  }
+</script>
+
 </body>
 </html>

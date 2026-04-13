@@ -14,28 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', onScroll, { passive: true });
   }
 
-  /* ── Mobile menu ───────────────────────────── */
-  const hamburger = document.getElementById('nav-hamburger');
-  const closeBtn = document.getElementById('nav-mobile-close');
-  const mobileMenu = document.getElementById('nav-mobile');
-  const overlay = document.getElementById('nav-mobile-overlay');
-
-  if (hamburger && mobileMenu && overlay) {
-    const toggleMenu = (open) => {
-      mobileMenu.classList.toggle('open', open);
-      overlay.classList.toggle('visible', open);
-      document.body.style.overflow = open ? 'hidden' : '';
-    };
-
-    hamburger.addEventListener('click', () => toggleMenu(true));
-    if (closeBtn) closeBtn.addEventListener('click', () => toggleMenu(false));
-    overlay.addEventListener('click', () => toggleMenu(false));
-
-    mobileMenu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => toggleMenu(false));
-    });
-  }
-
   /* ── Active nav link ───────────────────────── */
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-links a, .nav-mobile a').forEach(link => {

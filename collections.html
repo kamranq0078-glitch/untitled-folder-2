@@ -1,603 +1,641 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exotic Collection | Collections | Heritage Gemstone Jewellery Goa</title>
-  <meta name="description" content="Browse handmade platinum, gold and silver jewellery set with rubies, emeralds and sapphires. Each piece made once in Heritage. Inquire via WhatsApp.">
-  <link rel="stylesheet" href="css/design-system.css">
-  <link rel="stylesheet" href="css/collections.css">
+<head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><!-- 1. Preconnects -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><!-- 2. Preload hero image -->
+<link as="image" fetchpriority="high" href="/img/heritage-studio.webp" rel="preload"/><!-- 4. Non-critical CSS deferred -->
+<link href="css/design-system.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="css/design-system.css" rel="stylesheet"/></noscript>
+<link href="css/collections.css" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="css/collections.css" rel="stylesheet"/></noscript>
+
+<!-- 5. Primary SEO -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data: blob:; font-src 'self' https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com; connect-src 'self' https://wa.me https://www.google-analytics.com; frame-src https://www.google.com https://maps.google.com;">
+  <title>Collections | Exotic Collection | Kashmir Jewellery</title>
+<meta content="Browse handmade platinum, gold and silver jewellery set with rubies, emeralds and sapphires. Each piece made once in Kashmir." name="description"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://exoticcollection.in/collections.html" rel="canonical"/>
+<meta content="#07060A" name="theme-color"/>
+
+<!-- 6. Open Graph -->
+<meta content="website" property="og:type"/>
+<meta content="Collections | Exotic Collection | Kashmir Jewellery" property="og:title"/>
+<meta content="Browse handmade platinum, gold and silver jewellery set with rubies, emeralds and sapphires. Each piece made once in Kashmir." property="og:description"/>
+<meta content="https://exoticcollection.in/og-image.jpg" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="https://exoticcollection.in/collections.html" property="og:url"/>
+<meta content="Exotic Collection" property="og:site_name"/>
+
+<!-- 7. Twitter Card -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Collections | Exotic Collection | Kashmir Jewellery" name="twitter:title"/>
+<meta content="https://exoticcollection.in/og-image.jpg" name="twitter:image"/>
+
+<!-- 8. Favicons -->
+<link href="favicon.ico" rel="icon" sizes="32x32"/>
+<link href="icon.svg" rel="icon" type="image/svg+xml"/>
+<link href="apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="manifest.json" rel="manifest"/>
+
+<!-- 9. Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
 </head>
 <body>
-
+<a href="#main" class="skip-link" style="position: absolute; top: -100%; left: 16px; background: #C9A84C; color: #07060A; padding: 8px 16px; border-radius: 0 0 8px 8px; font-weight: 500; z-index: 10000; transition: top 0.2s;">Skip to main content</a>
+<div id="progress-bar" style="position: fixed; top: 0; left: 0; z-index: 9999; height: 2px; width: 0%; background: #C9A84C; transition: width 0.2s ease; will-change: width;"></div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('progress-bar').style.width = '100%';
+  setTimeout(() => {
+    document.getElementById('progress-bar').style.opacity = '0';
+  }, 400);
+});
+</script>
 <!-- Page Hero -->
+<main id="main">
 <section class="page-hero">
-  <div class="page-hero-bg" style="background-image:url('img/heritage-studio.png')"></div>
-  <div class="page-hero-overlay"></div>
-  <div class="page-hero-content">
-    <div class="pill reveal" style="margin-bottom:1.25rem">✦ Handmade in Heritage</div>
-    <h1 class="display-lg reveal reveal-delay-1">The Collections</h1>
-    <div class="gold-divider reveal reveal-delay-2"></div>
-    <p class="section-subtitle reveal reveal-delay-3" style="color:rgba(240,236,232,0.75)">No two pieces are alike. Each one is made by hand, set by hand, and finished by hand in Heritage.</p>
-  </div>
+<div class="page-hero-bg" style="background-image:url('img/heritage-studio.png')"></div>
+<div class="page-hero-overlay"></div>
+<div class="page-hero-content">
+<div class="pill reveal" style="margin-bottom:1.25rem">✦ Handmade in Heritage</div>
+<h1 class="display-lg reveal reveal-delay-1">The Collections</h1>
+<div class="gold-divider reveal reveal-delay-2"></div>
+<p class="section-subtitle reveal reveal-delay-3" style="color:rgba(240,236,232,0.75)">No two pieces are alike. Each one is made by hand, set by hand, and finished by hand in Heritage.</p>
+</div>
 </section>
-
 <!-- Filter Tabs -->
 <section class="filters-section">
-  <div class="container">
-        <div class="filter-tabs" id="filter-tabs" role="tablist">
-      <button class="filter-tab active" data-filter="all" role="tab">All</button>
-      <button class="filter-tab" data-filter="ring" role="tab">Rings</button>
-      <button class="filter-tab" data-filter="necklace" role="tab">Necklaces</button>
-      <button class="filter-tab" data-filter="earring" role="tab">Earrings</button>
-      <button class="filter-tab" data-filter="bracelet" role="tab">Bracelets</button>
-      <button class="filter-tab" data-filter="pendant" role="tab">Pendants</button>
-      <button class="filter-tab" data-filter="bangle" role="tab">Bangles</button>
-    </div>
-  </div>
+<div class="container">
+<div class="filter-tabs" id="filter-tabs" role="tablist">
+<button class="filter-tab active" data-filter="all" role="tab">All</button>
+<button class="filter-tab" data-filter="ring" role="tab">Rings</button>
+<button class="filter-tab" data-filter="necklace" role="tab">Necklaces</button>
+<button class="filter-tab" data-filter="earring" role="tab">Earrings</button>
+<button class="filter-tab" data-filter="bracelet" role="tab">Bracelets</button>
+<button class="filter-tab" data-filter="pendant" role="tab">Pendants</button>
+<button class="filter-tab" data-filter="bangle" role="tab">Bangles</button>
+</div>
+</div>
 </section>
-
 <!-- Product Grid -->
 <section class="section collection-grid-section">
-  <div class="container">
-    <div class="product-grid" id="product-grid">
-      <!-- Piece 1 -->
-      <article class="product-card card reveal" data-tags="ring all">
-        <div class="product-img jewel-image-wrap">
-          <img  src="img/ring-ruby-heart.jpg" alt="Ruby Heart Solitaire" loading="lazy" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;">
-          <div class="product-hover-overlay">
-            <span class="product-hover-name">Ruby Heart Solitaire</span>
-            <a href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Ruby+Heart+Solitaire." target="_blank" rel="noopener" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.1rem">Inquire →</a>
-          </div>
-        </div>
-        <div class="product-info">
-          <div class="product-name">Ruby Heart Solitaire</div>
-          <div class="product-meta label-mono">White Gold · Heart-Cut Ruby Setting</div>
-          <div class="product-badges">
-            <span class="pill pill-ruby" style="font-size:.58rem">Ruby</span>
-            <span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
-          </div>
-        </div>
-      </article>
-      <!-- Piece 2 -->
-      <article class="product-card card reveal reveal-delay-1" data-tags="ring all">
-        <div class="product-img jewel-image-wrap">
-          <img  src="img/ring-sapphire-cluster.jpg" alt="Tanzanite Sapphire Cluster" loading="lazy" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;">
-          <div class="product-hover-overlay">
-            <span class="product-hover-name">Tanzanite Sapphire Cluster</span>
-            <a href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Tanzanite+Sapphire+Cluster." target="_blank" rel="noopener" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.1rem">Inquire →</a>
-          </div>
-        </div>
-        <div class="product-info">
-          <div class="product-name">Tanzanite Sapphire Cluster</div>
-          <div class="product-meta label-mono">Silver Setting · Violet-Blue Teardrops</div>
-          <div class="product-badges">
-            <span class="pill pill-sapphire" style="font-size:.58rem">Sapphire</span>
-            <span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
-          </div>
-        </div>
-      </article>
-      <!-- Piece 3 -->
-      <article class="product-card card reveal reveal-delay-2" data-tags="ring all">
-        <div class="product-img jewel-image-wrap">
-          <img  src="img/ring-pearl-sphere.jpg" alt="Pearl Spherical Cage" loading="lazy" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;">
-          <div class="product-hover-overlay">
-            <span class="product-hover-name">Pearl Spherical Cage</span>
-            <a href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Pearl+Spherical+Cage." target="_blank" rel="noopener" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.1rem">Inquire →</a>
-          </div>
-        </div>
-        <div class="product-info">
-          <div class="product-name">Pearl Spherical Cage</div>
-          <div class="product-meta label-mono">22k Gold · Diamond-accented Sphere</div>
-          <div class="product-badges">
-            <span class="pill pill-pearl" style="font-size:.58rem">Pearl</span>
-            <span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
-          </div>
-        </div>
-      </article>
-      <!-- Piece 4 -->
-      <article class="product-card card reveal" data-tags="ring all">
-        <div class="product-img jewel-image-wrap">
-          <img  src="img/ring-yellow-sapphire.jpg" alt="Yellow Sapphire Emerald-Cut" loading="lazy" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;">
-          <div class="product-hover-overlay">
-            <span class="product-hover-name">Yellow Sapphire Emerald-Cut</span>
-            <a href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Yellow+Sapphire+Emerald-Cut." target="_blank" rel="noopener" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.1rem">Inquire →</a>
-          </div>
-        </div>
-        <div class="product-info">
-          <div class="product-name">Yellow Sapphire Emerald-Cut</div>
-          <div class="product-meta label-mono">Gold · Prong-setting Yellow Sapphire</div>
-          <div class="product-badges">
-            <span class="pill pill-sapphire" style="font-size:.58rem">Sapphire</span>
-            <span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
-          </div>
-        </div>
-      </article>
-      <!-- Piece 5 -->
-      <article class="product-card card reveal reveal-delay-1" data-tags="ring all">
-        <div class="product-img jewel-image-wrap">
-          <img src="img/ring-emerald-leaf.jpg" alt="Emerald Leaf Statement" loading="lazy" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;">
-          <div class="product-hover-overlay">
-            <span class="product-hover-name">Emerald Leaf Statement</span>
-            <a href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Emerald+Leaf+Statement." target="_blank" rel="noopener" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.1rem">Inquire →</a>
-          </div>
-        </div>
-        <div class="product-info">
-          <div class="product-name">Emerald Leaf Statement</div>
-          <div class="product-meta label-mono">Gold Setting · Elaborate Emerald Leaf</div>
-          <div class="product-badges">
-            <span class="pill pill-emerald" style="font-size:.58rem">Emerald</span>
-            <span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
-          </div>
-        </div>
-      </article>
-      <!-- Piece 6 -->
-      <article class="product-card card reveal reveal-delay-2" data-tags="necklace all">
-        <div class="product-img jewel-image-wrap">
-          <img  src="img/necklace-pearl-white.jpg" alt="Classic Pearl Teardrop Necklace" loading="lazy" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;">
-          <div class="product-hover-overlay">
-            <span class="product-hover-name">Classic Pearl Teardrop Necklace</span>
-            <a href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Classic+Pearl+Teardrop+Necklace." target="_blank" rel="noopener" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.1rem">Inquire →</a>
-          </div>
-        </div>
-        <div class="product-info">
-          <div class="product-name">Classic Pearl Teardrop Necklace</div>
-          <div class="product-meta label-mono">Pristine White Pearls · Diamond-set Pearl Drop</div>
-          <div class="product-badges">
-            <span class="pill pill-pearl" style="font-size:.58rem">Pearl</span>
-            <span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
-          </div>
-        </div>
-      </article>
-      <!-- Piece 7 -->
-      <article class="product-card card reveal" data-tags="necklace all">
-        <div class="product-img jewel-image-wrap">
-          <img  src="img/necklace-pearl-gold.jpg" alt="Golden Pearl Floral Gala" loading="lazy" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;">
-          <div class="product-hover-overlay">
-            <span class="product-hover-name">Golden Pearl Floral Gala</span>
-            <a href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Golden+Pearl+Floral+Gala." target="_blank" rel="noopener" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.1rem">Inquire →</a>
-          </div>
-        </div>
-        <div class="product-info">
-          <div class="product-name">Golden Pearl Floral Gala</div>
-          <div class="product-meta label-mono">22k Gold Finish · Golden Pearls · Diamond Clusters</div>
-          <div class="product-badges">
-            <span class="pill pill-ruby" style="font-size:.58rem">Golden Pearl</span>
-            <span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
-          </div>
-        </div>
-      </article>
-      <!-- Piece 8 -->
-      <article class="product-card card reveal reveal-delay-1" data-tags="necklace all">
-        <div class="product-img jewel-image-wrap">
-          <img  src="img/necklace-diamond-floral.jpg" alt="Starlight Diamond Floral Set" loading="lazy" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;">
-          <div class="product-hover-overlay">
-            <span class="product-hover-name">Starlight Diamond Floral Set</span>
-            <a href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Starlight+Diamond+Floral+Set." target="_blank" rel="noopener" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.1rem">Inquire →</a>
-          </div>
-        </div>
-        <div class="product-info">
-          <div class="product-name">Starlight Diamond Floral Set</div>
-          <div class="product-meta label-mono">Sterling Silver · Brilliant Cut Diamonds</div>
-          <div class="product-badges">
-            <span class="pill pill-white" style="font-size:.58rem">Diamond</span>
-            <span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
-          </div>
-        </div>
-      </article>
-      <!-- Piece 9 -->
-      <article class="product-card card reveal reveal-delay-2" data-tags="necklace all">
-        <div class="product-img jewel-image-wrap">
-          <img  src="img/necklace-emerald-royal.jpg" alt="Royal Emerald Heritage Necklace" loading="lazy" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;">
-          <div class="product-hover-overlay">
-            <span class="product-hover-name">Royal Emerald Heritage Necklace</span>
-            <a href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Royal+Emerald+Heritage+Necklace." target="_blank" rel="noopener" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.1rem">Inquire →</a>
-          </div>
-        </div>
-        <div class="product-info">
-          <div class="product-name">Royal Emerald Heritage Necklace</div>
-          <div class="product-meta label-mono">22k Gold · Colombian Emeralds</div>
-          <div class="product-badges">
-            <span class="pill pill-emerald" style="font-size:.58rem">Emerald</span>
-            <span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
-          </div>
-        </div>
-      </article>
-      <!-- Piece 10 -->
-      <article class="product-card card reveal" data-tags="necklace all">
-        <div class="product-img jewel-image-wrap">
-          <img  src="img/necklace-stock.jpg" alt="Heritage Legacy Necklace" loading="lazy" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;">
-          <div class="product-hover-overlay">
-            <span class="product-hover-name">Heritage Legacy Necklace</span>
-            <a href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Heritage+Legacy+Necklace." target="_blank" rel="noopener" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.1rem">Inquire →</a>
-          </div>
-        </div>
-        <div class="product-info">
-          <div class="product-name">Heritage Legacy Necklace</div>
-          <div class="product-meta label-mono">Gold · Heritage Design</div>
-          <div class="product-badges">
-            <span class="pill pill-ruby" style="font-size:.58rem">Ruby</span>
-            <span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
-          </div>
-        </div>
-      </article>
-      <!-- Piece 11 -->
-      <article class="product-card card reveal" data-tags="earring all">
-        <div class="product-img jewel-image-wrap">
-          <img  src="img/earring-emerald-drop.jpg" alt="Emerald Pave Drop Earrings" loading="lazy" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;">
-          <div class="product-hover-overlay">
-            <span class="product-hover-name">Emerald Pave Drop Earrings</span>
-            <a href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Emerald+Pave+Drop+Earrings." target="_blank" rel="noopener" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.1rem">Inquire →</a>
-          </div>
-        </div>
-        <div class="product-info">
-          <div class="product-name">Emerald Pave Drop Earrings</div>
-          <div class="product-meta label-mono">18k Gold · Pave-set Emeralds</div>
-          <div class="product-badges">
-            <span class="pill pill-emerald" style="font-size:.58rem">Emerald</span>
-            <span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
-          </div>
-        </div>
-      </article>
-      <!-- Piece 12 -->
-      <article class="product-card card reveal reveal-delay-1" data-tags="earring all">
-        <div class="product-img jewel-image-wrap">
-          <img  src="img/earring-ruby-cluster.jpg" alt="Ruby Floral Cluster Studs" loading="lazy" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;">
-          <div class="product-hover-overlay">
-            <span class="product-hover-name">Ruby Floral Cluster Studs</span>
-            <a href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Ruby+Floral+Cluster+Studs." target="_blank" rel="noopener" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.1rem">Inquire →</a>
-          </div>
-        </div>
-        <div class="product-info">
-          <div class="product-name">Ruby Floral Cluster Studs</div>
-          <div class="product-meta label-mono">22k Gold · Ruby Blossoms</div>
-          <div class="product-badges">
-            <span class="pill pill-ruby" style="font-size:.58rem">Ruby</span>
-            <span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
-          </div>
-        </div>
-      </article>
-      <!-- Piece 13 -->
-      <article class="product-card card reveal reveal-delay-2" data-tags="earring all">
-        <div class="product-img jewel-image-wrap">
-          <img  src="img/earring-diamond-teardrop.jpg" alt="Silver Diamond Teardrop Hoops" loading="lazy" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;">
-          <div class="product-hover-overlay">
-            <span class="product-hover-name">Silver Diamond Teardrop Hoops</span>
-            <a href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Silver+Diamond+Teardrop+Hoops." target="_blank" rel="noopener" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.1rem">Inquire →</a>
-          </div>
-        </div>
-        <div class="product-info">
-          <div class="product-name">Silver Diamond Teardrop Hoops</div>
-          <div class="product-meta label-mono">Sterling Silver · Brilliant Diamonds</div>
-          <div class="product-badges">
-            <span class="pill pill-white" style="font-size:.58rem">Diamond</span>
-            <span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
-          </div>
-        </div>
-      </article>
-      <!-- Piece 14 -->
-      <article class="product-card card reveal" data-tags="earring all">
-        <div class="product-img jewel-image-wrap">
-          <img  src="img/earring-diamond-floral.jpg" alt="Rose Gold Floral Diamond Drops" loading="lazy" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;">
-          <div class="product-hover-overlay">
-            <span class="product-hover-name">Rose Gold Floral Diamond Drops</span>
-            <a href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Rose+Gold+Floral+Diamond+Drops." target="_blank" rel="noopener" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.1rem">Inquire →</a>
-          </div>
-        </div>
-        <div class="product-info">
-          <div class="product-name">Rose Gold Floral Diamond Drops</div>
-          <div class="product-meta label-mono">Rose Gold · Diamond Petals</div>
-          <div class="product-badges">
-            <span class="pill pill-white" style="font-size:.58rem">Diamond</span>
-            <span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
-          </div>
-        </div>
-      </article>
-      <!-- Piece 15 -->
-      <article class="product-card card reveal reveal-delay-1" data-tags="earring all">
-        <div class="product-img jewel-image-wrap">
-          <img  src="img/earring-diamond-lattice.jpg" alt="Intricate Lattice Diamond Drops" loading="lazy" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;">
-          <div class="product-hover-overlay">
-            <span class="product-hover-name">Intricate Lattice Diamond Drops</span>
-            <a href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Intricate+Lattice+Diamond+Drops." target="_blank" rel="noopener" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.1rem">Inquire →</a>
-          </div>
-        </div>
-        <div class="product-info">
-          <div class="product-name">Intricate Lattice Diamond Drops</div>
-          <div class="product-meta label-mono">Rose Gold · Openwork Lattice</div>
-          <div class="product-badges">
-            <span class="pill pill-white" style="font-size:.58rem">Diamond</span>
-            <span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
-          </div>
-        </div>
-      </article>
-      <!-- Piece 16 -->
-      <article class="product-card card reveal" data-tags="bracelet all">
-        <div class="product-img jewel-image-wrap">
-          <img src="img/bracelet-pearl-triple.jpg" alt="Triple-Strand Pearl Bracelet" loading="lazy" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;">
-          <div class="product-hover-overlay">
-            <span class="product-hover-name">Triple-Strand Pearl Bracelet</span>
-            <a href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Triple-Strand+Pearl+Bracelet." target="_blank" rel="noopener" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.1rem">Inquire →</a>
-          </div>
-        </div>
-        <div class="product-info">
-          <div class="product-name">Triple-Strand Pearl Bracelet</div>
-          <div class="product-meta label-mono">Silver Clasp · Three-row Lustrous Pearls</div>
-          <div class="product-badges">
-            <span class="pill pill-pearl" style="font-size:.58rem">Pearl</span>
-            <span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
-          </div>
-        </div>
-      </article>
-      <!-- Piece 17 -->
-      <article class="product-card card reveal reveal-delay-1" data-tags="bracelet all">
-        <div class="product-img jewel-image-wrap">
-          <img src="img/bracelet-multi-gem.jpg" alt="Navaratna Multi-Gemstone Bracelet" loading="lazy" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;">
-          <div class="product-hover-overlay">
-            <span class="product-hover-name">Navaratna Multi-Gemstone Bracelet</span>
-            <a href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Navaratna+Multi-Gemstone+Bracelet." target="_blank" rel="noopener" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.1rem">Inquire →</a>
-          </div>
-        </div>
-        <div class="product-info">
-          <div class="product-name">Navaratna Multi-Gemstone Bracelet</div>
-          <div class="product-meta label-mono">Sterling Silver · Ruby, Emerald, Sapphire & Pearl</div>
-          <div class="product-badges">
-            <span class="pill pill-ruby" style="font-size:.58rem">Multi</span>
-            <span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
-          </div>
-        </div>
-      </article>
-      <!-- Piece 18 -->
-      <article class="product-card card reveal reveal-delay-2" data-tags="bracelet all">
-        <div class="product-img jewel-image-wrap">
-          <img src="img/bracelet-turquoise-cuff.jpg" alt="Turquoise Heritage Cuff" loading="lazy" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;">
-          <div class="product-hover-overlay">
-            <span class="product-hover-name">Turquoise Heritage Cuff</span>
-            <a href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Turquoise+Heritage+Cuff." target="_blank" rel="noopener" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.1rem">Inquire →</a>
-          </div>
-        </div>
-        <div class="product-info">
-          <div class="product-name">Turquoise Heritage Cuff</div>
-          <div class="product-meta label-mono">Hand-stamped Silver · Kingman Turquoise</div>
-          <div class="product-badges">
-            <span class="pill pill-emerald" style="font-size:.58rem">Turquoise</span>
-            <span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
-          </div>
-        </div>
-      </article>
-      <!-- Piece 19 -->
-      <article class="product-card card reveal" data-tags="bracelet all">
-        <div class="product-img jewel-image-wrap">
-          <img src="img/bracelet-turquoise-bead.jpg" alt="Natural Turquoise Bead Bracelet" loading="lazy" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;">
-          <div class="product-hover-overlay">
-            <span class="product-hover-name">Natural Turquoise Bead Bracelet</span>
-            <a href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Natural+Turquoise+Bead+Bracelet." target="_blank" rel="noopener" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.1rem">Inquire →</a>
-          </div>
-        </div>
-        <div class="product-info">
-          <div class="product-name">Natural Turquoise Bead Bracelet</div>
-          <div class="product-meta label-mono">Polished Turquoise Beads · Stretch Design</div>
-          <div class="product-badges">
-            <span class="pill pill-emerald" style="font-size:.58rem">Turquoise</span>
-            <span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
-          </div>
-        </div>
-      </article>
-      <!-- Piece 20 -->
-      <article class="product-card card reveal reveal-delay-1" data-tags="bracelet all">
-        <div class="product-img jewel-image-wrap">
-          <img src="img/bracelet-pearl-link.jpg" alt="Silver & Pearl Link Bracelet" loading="lazy" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;">
-          <div class="product-hover-overlay">
-            <span class="product-hover-name">Silver & Pearl Link Bracelet</span>
-            <a href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Silver+&amp;+Pearl+Link+Bracelet." target="_blank" rel="noopener" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.1rem">Inquire →</a>
-          </div>
-        </div>
-        <div class="product-info">
-          <div class="product-name">Silver & Pearl Link Bracelet</div>
-          <div class="product-meta label-mono">Delicate Silver Chain · Freshwater Pearls</div>
-          <div class="product-badges">
-            <span class="pill pill-pearl" style="font-size:.58rem">Pearl</span>
-            <span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
-          </div>
-        </div>
-      </article>
-      <!-- Piece 21 -->
-      <article class="product-card card reveal reveal-delay-2" data-tags="pendant all">
-        <div class="product-img jewel-image-wrap">
-          <img  src="img/necklace-amethyst.jpg" alt="Amethyst Teardrop Pendant" loading="lazy" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;">
-          <div class="product-hover-overlay">
-            <span class="product-hover-name">Amethyst Teardrop Pendant</span>
-            <a href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Amethyst+Teardrop+Pendant." target="_blank" rel="noopener" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.1rem">Inquire →</a>
-          </div>
-        </div>
-        <div class="product-info">
-          <div class="product-name">Amethyst Teardrop Pendant</div>
-          <div class="product-meta label-mono">Silver Setting · Amethyst Gemstone</div>
-          <div class="product-badges">
-            <span class="pill pill-ruby" style="font-size:.58rem">Amethyst</span>
-            <span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
-          </div>
-        </div>
-      </article>
-      <!-- Piece 22 -->
-      <article class="product-card card reveal" data-tags="pendant all">
-        <div class="product-img jewel-image-wrap">
-          <img  src="img/necklace-cross.jpg" alt="Rose Gold Infinity Cross" loading="lazy" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;">
-          <div class="product-hover-overlay">
-            <span class="product-hover-name">Rose Gold Infinity Cross</span>
-            <a href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Rose+Gold+Infinity+Cross." target="_blank" rel="noopener" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.1rem">Inquire →</a>
-          </div>
-        </div>
-        <div class="product-info">
-          <div class="product-name">Rose Gold Infinity Cross</div>
-          <div class="product-meta label-mono">Rose Gold · Diamond Accents</div>
-          <div class="product-badges">
-            <span class="pill pill-white" style="font-size:.58rem">Diamond</span>
-            <span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
-          </div>
-        </div>
-      </article>
-      <!-- Piece 23 -->
-      <article class="product-card card reveal reveal-delay-1" data-tags="pendant all">
-        <div class="product-img jewel-image-wrap">
-          <img  src="img/necklace-geometric.jpg" alt="Modernist Diamond Geometric" loading="lazy" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;">
-          <div class="product-hover-overlay">
-            <span class="product-hover-name">Modernist Diamond Geometric</span>
-            <a href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Modernist+Diamond+Geometric." target="_blank" rel="noopener" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.1rem">Inquire →</a>
-          </div>
-        </div>
-        <div class="product-info">
-          <div class="product-name">Modernist Diamond Geometric</div>
-          <div class="product-meta label-mono">Platinum Setting · Brilliant Diamonds</div>
-          <div class="product-badges">
-            <span class="pill pill-white" style="font-size:.58rem">Diamond</span>
-            <span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
-          </div>
-        </div>
-      </article>
-      <!-- Piece 24 -->
-      <article class="product-card card reveal reveal-delay-2" data-tags="pendant all">
-        <div class="product-img jewel-image-wrap">
-          <img  src="img/ruby-pendant-stock.jpg" alt="Heritage Ruby Pendant" loading="lazy" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;">
-          <div class="product-hover-overlay">
-            <span class="product-hover-name">Heritage Ruby Pendant</span>
-            <a href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Heritage+Ruby+Pendant." target="_blank" rel="noopener" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.1rem">Inquire →</a>
-          </div>
-        </div>
-        <div class="product-info">
-          <div class="product-name">Heritage Ruby Pendant</div>
-          <div class="product-meta label-mono">Gold · Hand-set Ruby</div>
-          <div class="product-badges">
-            <span class="pill pill-ruby" style="font-size:.58rem">Ruby</span>
-            <span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
-          </div>
-        </div>
-      </article>
-      <!-- Piece 25 -->
-      <article class="product-card card reveal" data-tags="pendant all">
-        <div class="product-img jewel-image-wrap">
-          <img  src="img/pendants-stock.png" alt="Classic Kashmiri Pendant" loading="lazy" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;">
-          <div class="product-hover-overlay">
-            <span class="product-hover-name">Classic Kashmiri Pendant</span>
-            <a href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Classic+Kashmiri+Pendant." target="_blank" rel="noopener" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.1rem">Inquire →</a>
-          </div>
-        </div>
-        <div class="product-info">
-          <div class="product-name">Classic Kashmiri Pendant</div>
-          <div class="product-meta label-mono">Silver · Traditional Kashmiri Art</div>
-          <div class="product-badges">
-            <span class="pill pill-white" style="font-size:.58rem">Kashmiri</span>
-            <span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
-          </div>
-        </div>
-      </article>
-      <!-- Piece 26 -->
-      <article class="product-card card reveal" data-tags="bangle all">
-        <div class="product-img jewel-image-wrap">
-          <img src="img/bangle-silver-ornate.jpg" alt="Ornate Floral Silver Bangle" loading="lazy" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;">
-          <div class="product-hover-overlay">
-            <span class="product-hover-name">Ornate Floral Silver Bangle</span>
-            <a href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Ornate+Floral+Silver+Bangle." target="_blank" rel="noopener" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.1rem">Inquire →</a>
-          </div>
-        </div>
-        <div class="product-info">
-          <div class="product-name">Ornate Floral Silver Bangle</div>
-          <div class="product-meta label-mono">Silver Setting · Hand-carved Floral Design</div>
-          <div class="product-badges">
-            <span class="pill pill-white" style="font-size:.58rem">Silver</span>
-            <span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
-          </div>
-        </div>
-      </article>
-      <!-- Piece 27 -->
-      <article class="product-card card reveal reveal-delay-1" data-tags="bangle all">
-        <div class="product-img jewel-image-wrap">
-          <img src="img/bangle-silver-pair.jpg" alt="Silver Beaded Bangle Pair" loading="lazy" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;">
-          <div class="product-hover-overlay">
-            <span class="product-hover-name">Silver Beaded Bangle Pair</span>
-            <a href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Silver+Beaded+Bangle+Pair." target="_blank" rel="noopener" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.1rem">Inquire →</a>
-          </div>
-        </div>
-        <div class="product-info">
-          <div class="product-name">Silver Beaded Bangle Pair</div>
-          <div class="product-meta label-mono">Sterling Silver · Beaded Detail</div>
-          <div class="product-badges">
-            <span class="pill pill-white" style="font-size:.58rem">Silver</span>
-            <span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
-          </div>
-        </div>
-      </article>
-      <!-- Piece 28 -->
-      <article class="product-card card reveal reveal-delay-2" data-tags="bangle all">
-        <div class="product-img jewel-image-wrap">
-          <img src="img/bangle-silver-statement.jpg" alt="Statement Ornate Bangle" loading="lazy" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;">
-          <div class="product-hover-overlay">
-            <span class="product-hover-name">Statement Ornate Bangle</span>
-            <a href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Statement+Ornate+Bangle." target="_blank" rel="noopener" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.1rem">Inquire →</a>
-          </div>
-        </div>
-        <div class="product-info">
-          <div class="product-name">Statement Ornate Bangle</div>
-          <div class="product-meta label-mono">Heavy Silver · Intricate Leaf Pattern</div>
-          <div class="product-badges">
-            <span class="pill pill-white" style="font-size:.58rem">Silver</span>
-            <span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
-          </div>
-        </div>
-      </article>
-      <!-- Piece 29 -->
-      <article class="product-card card reveal" data-tags="bangle all">
-        <div class="product-img jewel-image-wrap">
-          <img src="img/bangles-stock.png" alt="Heritage Legacy Bangle" loading="lazy" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;">
-          <div class="product-hover-overlay">
-            <span class="product-hover-name">Heritage Legacy Bangle</span>
-            <a href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Heritage+Legacy+Bangle." target="_blank" rel="noopener" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.1rem">Inquire →</a>
-          </div>
-        </div>
-        <div class="product-info">
-          <div class="product-name">Heritage Legacy Bangle</div>
-          <div class="product-meta label-mono">Traditional Craft · Heritage Design</div>
-          <div class="product-badges">
-            <span class="pill pill-white" style="font-size:.58rem">Silver</span>
-            <span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
-          </div>
-        </div>
-      </article>
-      <!-- Piece 30 -->
-      <article class="product-card card reveal reveal-delay-1" data-tags="bangle all">
-        <div class="product-img jewel-image-wrap">
-          <img src="img/gallery-bangle-silver.jpg" alt="Traditional Kashmiri Bangle" loading="lazy" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;">
-          <div class="product-hover-overlay">
-            <span class="product-hover-name">Traditional Kashmiri Bangle</span>
-            <a href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Traditional+Kashmiri+Bangle." target="_blank" rel="noopener" class="btn btn-gold" style="font-size:.72rem;padding:.6rem 1.1rem">Inquire →</a>
-          </div>
-        </div>
-        <div class="product-info">
-          <div class="product-name">Traditional Kashmiri Bangle</div>
-          <div class="product-meta label-mono">Heritage Silver · Signature Kashmiri Art</div>
-          <div class="product-badges">
-            <span class="pill pill-white" style="font-size:.58rem">Kashmiri</span>
-            <span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
-          </div>
-        </div>
-      </article>
-
-    </div><!-- /product-grid -->
-
-    <!-- Custom CTA -->
-    <div class="custom-cta-band reveal" style="margin-top:5rem">
-      <div class="custom-cta-text">
-        <h3 class="display-md" style="color:var(--gold);margin-bottom:.75rem">Can't find what you're looking for?</h3>
-        <p style="color:var(--muted);font-size:.95rem;line-height:1.8">We create bespoke pieces — your stone, your design, your metal. Typically 2–4 weeks from our Artisan Boutique atelier.</p>
-      </div>
-      <a href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+a+specific+piece+from+your+collection+and+would+like+to+inquire." target="_blank" rel="noopener" class="btn btn-whatsapp">Start a Custom Conversation →</a>
-    </div>
-
-  </div>
+<div class="container">
+<div class="product-grid" id="product-grid">
+<!-- Piece 1 -->
+<article class="product-card card reveal" data-tags="ring all">
+<div class="product-img jewel-image-wrap">
+<picture><source srcset="img/ring-ruby-heart.webp" type="image/webp"/><img alt="Ruby Heart Solitaire" decoding="async" height="736" loading="lazy" src="img/ring-ruby-heart.jpg" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;" width="736"/></picture>
+<div class="product-hover-overlay">
+<span class="product-hover-name">Ruby Heart Solitaire</span>
+<a class="btn btn-gold" href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Ruby+Heart+Solitaire." rel="noopener" style="font-size:.72rem;padding:.6rem 1.1rem" target="_blank">Inquire →</a>
+</div>
+</div>
+<div class="product-info">
+<div class="product-name">Ruby Heart Solitaire</div>
+<div class="product-meta label-mono">White Gold · Heart-Cut Ruby Setting</div>
+<div class="product-badges">
+<span class="pill pill-ruby" style="font-size:.58rem">Ruby</span>
+<span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
+</div>
+</div>
+</article>
+<!-- Piece 2 -->
+<article class="product-card card reveal reveal-delay-1" data-tags="ring all">
+<div class="product-img jewel-image-wrap">
+<picture><source srcset="img/ring-sapphire-cluster.webp" type="image/webp"/><img alt="Tanzanite Sapphire Cluster" decoding="async" height="800" loading="lazy" src="img/ring-sapphire-cluster.jpg" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;" width="644"/></picture>
+<div class="product-hover-overlay">
+<span class="product-hover-name">Tanzanite Sapphire Cluster</span>
+<a class="btn btn-gold" href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Tanzanite+Sapphire+Cluster." rel="noopener" style="font-size:.72rem;padding:.6rem 1.1rem" target="_blank">Inquire →</a>
+</div>
+</div>
+<div class="product-info">
+<div class="product-name">Tanzanite Sapphire Cluster</div>
+<div class="product-meta label-mono">Silver Setting · Violet-Blue Teardrops</div>
+<div class="product-badges">
+<span class="pill pill-sapphire" style="font-size:.58rem">Sapphire</span>
+<span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
+</div>
+</div>
+</article>
+<!-- Piece 3 -->
+<article class="product-card card reveal reveal-delay-2" data-tags="ring all">
+<div class="product-img jewel-image-wrap">
+<picture><source srcset="img/ring-pearl-sphere.webp" type="image/webp"/><img alt="Pearl Spherical Cage" decoding="async" height="800" loading="lazy" src="img/ring-pearl-sphere.jpg" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;" width="634"/></picture>
+<div class="product-hover-overlay">
+<span class="product-hover-name">Pearl Spherical Cage</span>
+<a class="btn btn-gold" href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Pearl+Spherical+Cage." rel="noopener" style="font-size:.72rem;padding:.6rem 1.1rem" target="_blank">Inquire →</a>
+</div>
+</div>
+<div class="product-info">
+<div class="product-name">Pearl Spherical Cage</div>
+<div class="product-meta label-mono">22k Gold · Diamond-accented Sphere</div>
+<div class="product-badges">
+<span class="pill pill-pearl" style="font-size:.58rem">Pearl</span>
+<span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
+</div>
+</div>
+</article>
+<!-- Piece 4 -->
+<article class="product-card card reveal" data-tags="ring all">
+<div class="product-img jewel-image-wrap">
+<picture><source srcset="img/ring-yellow-sapphire.webp" type="image/webp"/><img alt="Yellow Sapphire Emerald-Cut" decoding="async" height="800" loading="lazy" src="img/ring-yellow-sapphire.jpg" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;" width="800"/></picture>
+<div class="product-hover-overlay">
+<span class="product-hover-name">Yellow Sapphire Emerald-Cut</span>
+<a class="btn btn-gold" href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Yellow+Sapphire+Emerald-Cut." rel="noopener" style="font-size:.72rem;padding:.6rem 1.1rem" target="_blank">Inquire →</a>
+</div>
+</div>
+<div class="product-info">
+<div class="product-name">Yellow Sapphire Emerald-Cut</div>
+<div class="product-meta label-mono">Gold · Prong-setting Yellow Sapphire</div>
+<div class="product-badges">
+<span class="pill pill-sapphire" style="font-size:.58rem">Sapphire</span>
+<span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
+</div>
+</div>
+</article>
+<!-- Piece 5 -->
+<article class="product-card card reveal reveal-delay-1" data-tags="ring all">
+<div class="product-img jewel-image-wrap">
+<picture><source srcset="img/ring-emerald-leaf.webp" type="image/webp"/><img alt="Emerald Leaf Statement" decoding="async" height="800" loading="lazy" src="img/ring-emerald-leaf.jpg" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;" width="458"/></picture>
+<div class="product-hover-overlay">
+<span class="product-hover-name">Emerald Leaf Statement</span>
+<a class="btn btn-gold" href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Emerald+Leaf+Statement." rel="noopener" style="font-size:.72rem;padding:.6rem 1.1rem" target="_blank">Inquire →</a>
+</div>
+</div>
+<div class="product-info">
+<div class="product-name">Emerald Leaf Statement</div>
+<div class="product-meta label-mono">Gold Setting · Elaborate Emerald Leaf</div>
+<div class="product-badges">
+<span class="pill pill-emerald" style="font-size:.58rem">Emerald</span>
+<span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
+</div>
+</div>
+</article>
+<!-- Piece 6 -->
+<article class="product-card card reveal reveal-delay-2" data-tags="necklace all">
+<div class="product-img jewel-image-wrap">
+<picture><source srcset="img/necklace-pearl-white.webp" type="image/webp"/><img alt="Classic Pearl Teardrop Necklace" decoding="async" height="737" loading="lazy" src="img/necklace-pearl-white.jpg" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;" width="736"/></picture>
+<div class="product-hover-overlay">
+<span class="product-hover-name">Classic Pearl Teardrop Necklace</span>
+<a class="btn btn-gold" href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Classic+Pearl+Teardrop+Necklace." rel="noopener" style="font-size:.72rem;padding:.6rem 1.1rem" target="_blank">Inquire →</a>
+</div>
+</div>
+<div class="product-info">
+<div class="product-name">Classic Pearl Teardrop Necklace</div>
+<div class="product-meta label-mono">Pristine White Pearls · Diamond-set Pearl Drop</div>
+<div class="product-badges">
+<span class="pill pill-pearl" style="font-size:.58rem">Pearl</span>
+<span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
+</div>
+</div>
+</article>
+<!-- Piece 7 -->
+<article class="product-card card reveal" data-tags="necklace all">
+<div class="product-img jewel-image-wrap">
+<picture><source srcset="img/necklace-pearl-gold.webp" type="image/webp"/><img alt="Golden Pearl Floral Gala" decoding="async" height="800" loading="lazy" src="img/necklace-pearl-gold.jpg" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;" width="640"/></picture>
+<div class="product-hover-overlay">
+<span class="product-hover-name">Golden Pearl Floral Gala</span>
+<a class="btn btn-gold" href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Golden+Pearl+Floral+Gala." rel="noopener" style="font-size:.72rem;padding:.6rem 1.1rem" target="_blank">Inquire →</a>
+</div>
+</div>
+<div class="product-info">
+<div class="product-name">Golden Pearl Floral Gala</div>
+<div class="product-meta label-mono">22k Gold Finish · Golden Pearls · Diamond Clusters</div>
+<div class="product-badges">
+<span class="pill pill-ruby" style="font-size:.58rem">Golden Pearl</span>
+<span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
+</div>
+</div>
+</article>
+<!-- Piece 8 -->
+<article class="product-card card reveal reveal-delay-1" data-tags="necklace all">
+<div class="product-img jewel-image-wrap">
+<picture><source srcset="img/necklace-diamond-floral.webp" type="image/webp"/><img alt="Starlight Diamond Floral Set" decoding="async" height="736" loading="lazy" src="img/necklace-diamond-floral.jpg" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;" width="736"/></picture>
+<div class="product-hover-overlay">
+<span class="product-hover-name">Starlight Diamond Floral Set</span>
+<a class="btn btn-gold" href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Starlight+Diamond+Floral+Set." rel="noopener" style="font-size:.72rem;padding:.6rem 1.1rem" target="_blank">Inquire →</a>
+</div>
+</div>
+<div class="product-info">
+<div class="product-name">Starlight Diamond Floral Set</div>
+<div class="product-meta label-mono">Sterling Silver · Brilliant Cut Diamonds</div>
+<div class="product-badges">
+<span class="pill pill-white" style="font-size:.58rem">Diamond</span>
+<span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
+</div>
+</div>
+</article>
+<!-- Piece 9 -->
+<article class="product-card card reveal reveal-delay-2" data-tags="necklace all">
+<div class="product-img jewel-image-wrap">
+<picture><source srcset="img/necklace-emerald-royal.webp" type="image/webp"/><img alt="Royal Emerald Heritage Necklace" decoding="async" height="800" loading="lazy" src="img/necklace-emerald-royal.jpg" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;" width="533"/></picture>
+<div class="product-hover-overlay">
+<span class="product-hover-name">Royal Emerald Heritage Necklace</span>
+<a class="btn btn-gold" href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Royal+Emerald+Heritage+Necklace." rel="noopener" style="font-size:.72rem;padding:.6rem 1.1rem" target="_blank">Inquire →</a>
+</div>
+</div>
+<div class="product-info">
+<div class="product-name">Royal Emerald Heritage Necklace</div>
+<div class="product-meta label-mono">22k Gold · Colombian Emeralds</div>
+<div class="product-badges">
+<span class="pill pill-emerald" style="font-size:.58rem">Emerald</span>
+<span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
+</div>
+</div>
+</article>
+<!-- Piece 10 -->
+<article class="product-card card reveal" data-tags="necklace all">
+<div class="product-img jewel-image-wrap">
+<picture><source srcset="img/necklace-stock.webp" type="image/webp"/><img alt="Heritage Legacy Necklace" decoding="async" height="800" loading="lazy" src="img/necklace-stock.jpg" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;" width="800"/></picture>
+<div class="product-hover-overlay">
+<span class="product-hover-name">Heritage Legacy Necklace</span>
+<a class="btn btn-gold" href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Heritage+Legacy+Necklace." rel="noopener" style="font-size:.72rem;padding:.6rem 1.1rem" target="_blank">Inquire →</a>
+</div>
+</div>
+<div class="product-info">
+<div class="product-name">Heritage Legacy Necklace</div>
+<div class="product-meta label-mono">Gold · Heritage Design</div>
+<div class="product-badges">
+<span class="pill pill-ruby" style="font-size:.58rem">Ruby</span>
+<span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
+</div>
+</div>
+</article>
+<!-- Piece 11 -->
+<article class="product-card card reveal" data-tags="earring all">
+<div class="product-img jewel-image-wrap">
+<picture><source srcset="img/earring-emerald-drop.webp" type="image/webp"/><img alt="Emerald Pave Drop Earrings" decoding="async" height="800" loading="lazy" src="img/earring-emerald-drop.jpg" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;" width="450"/></picture>
+<div class="product-hover-overlay">
+<span class="product-hover-name">Emerald Pave Drop Earrings</span>
+<a class="btn btn-gold" href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Emerald+Pave+Drop+Earrings." rel="noopener" style="font-size:.72rem;padding:.6rem 1.1rem" target="_blank">Inquire →</a>
+</div>
+</div>
+<div class="product-info">
+<div class="product-name">Emerald Pave Drop Earrings</div>
+<div class="product-meta label-mono">18k Gold · Pave-set Emeralds</div>
+<div class="product-badges">
+<span class="pill pill-emerald" style="font-size:.58rem">Emerald</span>
+<span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
+</div>
+</div>
+</article>
+<!-- Piece 12 -->
+<article class="product-card card reveal reveal-delay-1" data-tags="earring all">
+<div class="product-img jewel-image-wrap">
+<picture><source srcset="img/earring-ruby-cluster.webp" type="image/webp"/><img alt="Ruby Floral Cluster Studs" decoding="async" height="736" loading="lazy" src="img/earring-ruby-cluster.jpg" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;" width="736"/></picture>
+<div class="product-hover-overlay">
+<span class="product-hover-name">Ruby Floral Cluster Studs</span>
+<a class="btn btn-gold" href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Ruby+Floral+Cluster+Studs." rel="noopener" style="font-size:.72rem;padding:.6rem 1.1rem" target="_blank">Inquire →</a>
+</div>
+</div>
+<div class="product-info">
+<div class="product-name">Ruby Floral Cluster Studs</div>
+<div class="product-meta label-mono">22k Gold · Ruby Blossoms</div>
+<div class="product-badges">
+<span class="pill pill-ruby" style="font-size:.58rem">Ruby</span>
+<span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
+</div>
+</div>
+</article>
+<!-- Piece 13 -->
+<article class="product-card card reveal reveal-delay-2" data-tags="earring all">
+<div class="product-img jewel-image-wrap">
+<picture><source srcset="img/earring-diamond-teardrop.webp" type="image/webp"/><img alt="Silver Diamond Teardrop Hoops" decoding="async" height="694" loading="lazy" src="img/earring-diamond-teardrop.jpg" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;" width="736"/></picture>
+<div class="product-hover-overlay">
+<span class="product-hover-name">Silver Diamond Teardrop Hoops</span>
+<a class="btn btn-gold" href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Silver+Diamond+Teardrop+Hoops." rel="noopener" style="font-size:.72rem;padding:.6rem 1.1rem" target="_blank">Inquire →</a>
+</div>
+</div>
+<div class="product-info">
+<div class="product-name">Silver Diamond Teardrop Hoops</div>
+<div class="product-meta label-mono">Sterling Silver · Brilliant Diamonds</div>
+<div class="product-badges">
+<span class="pill pill-white" style="font-size:.58rem">Diamond</span>
+<span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
+</div>
+</div>
+</article>
+<!-- Piece 14 -->
+<article class="product-card card reveal" data-tags="earring all">
+<div class="product-img jewel-image-wrap">
+<picture><source srcset="img/earring-diamond-floral.webp" type="image/webp"/><img alt="Rose Gold Floral Diamond Drops" decoding="async" height="736" loading="lazy" src="img/earring-diamond-floral.jpg" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;" width="736"/></picture>
+<div class="product-hover-overlay">
+<span class="product-hover-name">Rose Gold Floral Diamond Drops</span>
+<a class="btn btn-gold" href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Rose+Gold+Floral+Diamond+Drops." rel="noopener" style="font-size:.72rem;padding:.6rem 1.1rem" target="_blank">Inquire →</a>
+</div>
+</div>
+<div class="product-info">
+<div class="product-name">Rose Gold Floral Diamond Drops</div>
+<div class="product-meta label-mono">Rose Gold · Diamond Petals</div>
+<div class="product-badges">
+<span class="pill pill-white" style="font-size:.58rem">Diamond</span>
+<span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
+</div>
+</div>
+</article>
+<!-- Piece 15 -->
+<article class="product-card card reveal reveal-delay-1" data-tags="earring all">
+<div class="product-img jewel-image-wrap">
+<picture><source srcset="img/earring-diamond-lattice.webp" type="image/webp"/><img alt="Intricate Lattice Diamond Drops" decoding="async" height="600" loading="lazy" src="img/earring-diamond-lattice.jpg" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;" width="600"/></picture>
+<div class="product-hover-overlay">
+<span class="product-hover-name">Intricate Lattice Diamond Drops</span>
+<a class="btn btn-gold" href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Intricate+Lattice+Diamond+Drops." rel="noopener" style="font-size:.72rem;padding:.6rem 1.1rem" target="_blank">Inquire →</a>
+</div>
+</div>
+<div class="product-info">
+<div class="product-name">Intricate Lattice Diamond Drops</div>
+<div class="product-meta label-mono">Rose Gold · Openwork Lattice</div>
+<div class="product-badges">
+<span class="pill pill-white" style="font-size:.58rem">Diamond</span>
+<span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
+</div>
+</div>
+</article>
+<!-- Piece 16 -->
+<article class="product-card card reveal" data-tags="bracelet all">
+<div class="product-img jewel-image-wrap">
+<picture><source srcset="img/bracelet-pearl-triple.webp" type="image/webp"/><img alt="Triple-Strand Pearl Bracelet" decoding="async" height="800" loading="lazy" src="img/bracelet-pearl-triple.jpg" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;" width="640"/></picture>
+<div class="product-hover-overlay">
+<span class="product-hover-name">Triple-Strand Pearl Bracelet</span>
+<a class="btn btn-gold" href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Triple-Strand+Pearl+Bracelet." rel="noopener" style="font-size:.72rem;padding:.6rem 1.1rem" target="_blank">Inquire →</a>
+</div>
+</div>
+<div class="product-info">
+<div class="product-name">Triple-Strand Pearl Bracelet</div>
+<div class="product-meta label-mono">Silver Clasp · Three-row Lustrous Pearls</div>
+<div class="product-badges">
+<span class="pill pill-pearl" style="font-size:.58rem">Pearl</span>
+<span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
+</div>
+</div>
+</article>
+<!-- Piece 17 -->
+<article class="product-card card reveal reveal-delay-1" data-tags="bracelet all">
+<div class="product-img jewel-image-wrap">
+<picture><source srcset="img/bracelet-multi-gem.webp" type="image/webp"/><img alt="Navaratna Multi-Gemstone Bracelet" decoding="async" height="331" loading="lazy" src="img/bracelet-multi-gem.jpg" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;" width="800"/></picture>
+<div class="product-hover-overlay">
+<span class="product-hover-name">Navaratna Multi-Gemstone Bracelet</span>
+<a class="btn btn-gold" href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Navaratna+Multi-Gemstone+Bracelet." rel="noopener" style="font-size:.72rem;padding:.6rem 1.1rem" target="_blank">Inquire →</a>
+</div>
+</div>
+<div class="product-info">
+<div class="product-name">Navaratna Multi-Gemstone Bracelet</div>
+<div class="product-meta label-mono">Sterling Silver · Ruby, Emerald, Sapphire &amp; Pearl</div>
+<div class="product-badges">
+<span class="pill pill-ruby" style="font-size:.58rem">Multi</span>
+<span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
+</div>
+</div>
+</article>
+<!-- Piece 18 -->
+<article class="product-card card reveal reveal-delay-2" data-tags="bracelet all">
+<div class="product-img jewel-image-wrap">
+<picture><source srcset="img/bracelet-turquoise-cuff.webp" type="image/webp"/><img alt="Turquoise Heritage Cuff" decoding="async" height="470" loading="lazy" src="img/bracelet-turquoise-cuff.jpg" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;" width="800"/></picture>
+<div class="product-hover-overlay">
+<span class="product-hover-name">Turquoise Heritage Cuff</span>
+<a class="btn btn-gold" href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Turquoise+Heritage+Cuff." rel="noopener" style="font-size:.72rem;padding:.6rem 1.1rem" target="_blank">Inquire →</a>
+</div>
+</div>
+<div class="product-info">
+<div class="product-name">Turquoise Heritage Cuff</div>
+<div class="product-meta label-mono">Hand-stamped Silver · Kingman Turquoise</div>
+<div class="product-badges">
+<span class="pill pill-emerald" style="font-size:.58rem">Turquoise</span>
+<span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
+</div>
+</div>
+</article>
+<!-- Piece 19 -->
+<article class="product-card card reveal" data-tags="bracelet all">
+<div class="product-img jewel-image-wrap">
+<picture><source srcset="img/bracelet-turquoise-bead.webp" type="image/webp"/><img alt="Natural Turquoise Bead Bracelet" decoding="async" height="723" loading="lazy" src="img/bracelet-turquoise-bead.jpg" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;" width="800"/></picture>
+<div class="product-hover-overlay">
+<span class="product-hover-name">Natural Turquoise Bead Bracelet</span>
+<a class="btn btn-gold" href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Natural+Turquoise+Bead+Bracelet." rel="noopener" style="font-size:.72rem;padding:.6rem 1.1rem" target="_blank">Inquire →</a>
+</div>
+</div>
+<div class="product-info">
+<div class="product-name">Natural Turquoise Bead Bracelet</div>
+<div class="product-meta label-mono">Polished Turquoise Beads · Stretch Design</div>
+<div class="product-badges">
+<span class="pill pill-emerald" style="font-size:.58rem">Turquoise</span>
+<span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
+</div>
+</div>
+</article>
+<!-- Piece 20 -->
+<article class="product-card card reveal reveal-delay-1" data-tags="bracelet all">
+<div class="product-img jewel-image-wrap">
+<picture><source srcset="img/bracelet-pearl-link.webp" type="image/webp"/><img alt="Silver &amp; Pearl Link Bracelet" decoding="async" height="800" loading="lazy" src="img/bracelet-pearl-link.jpg" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;" width="702"/></picture>
+<div class="product-hover-overlay">
+<span class="product-hover-name">Silver &amp; Pearl Link Bracelet</span>
+<a class="btn btn-gold" href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Silver+&amp;+Pearl+Link+Bracelet." rel="noopener" style="font-size:.72rem;padding:.6rem 1.1rem" target="_blank">Inquire →</a>
+</div>
+</div>
+<div class="product-info">
+<div class="product-name">Silver &amp; Pearl Link Bracelet</div>
+<div class="product-meta label-mono">Delicate Silver Chain · Freshwater Pearls</div>
+<div class="product-badges">
+<span class="pill pill-pearl" style="font-size:.58rem">Pearl</span>
+<span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
+</div>
+</div>
+</article>
+<!-- Piece 21 -->
+<article class="product-card card reveal reveal-delay-2" data-tags="pendant all">
+<div class="product-img jewel-image-wrap">
+<picture><source srcset="img/necklace-amethyst.webp" type="image/webp"/><img alt="Amethyst Teardrop Pendant" decoding="async" height="800" loading="lazy" src="img/necklace-amethyst.jpg" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;" width="490"/></picture>
+<div class="product-hover-overlay">
+<span class="product-hover-name">Amethyst Teardrop Pendant</span>
+<a class="btn btn-gold" href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Amethyst+Teardrop+Pendant." rel="noopener" style="font-size:.72rem;padding:.6rem 1.1rem" target="_blank">Inquire →</a>
+</div>
+</div>
+<div class="product-info">
+<div class="product-name">Amethyst Teardrop Pendant</div>
+<div class="product-meta label-mono">Silver Setting · Amethyst Gemstone</div>
+<div class="product-badges">
+<span class="pill pill-ruby" style="font-size:.58rem">Amethyst</span>
+<span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
+</div>
+</div>
+</article>
+<!-- Piece 22 -->
+<article class="product-card card reveal" data-tags="pendant all">
+<div class="product-img jewel-image-wrap">
+<picture><source srcset="img/necklace-cross.webp" type="image/webp"/><img alt="Rose Gold Infinity Cross" decoding="async" height="500" loading="lazy" src="img/necklace-cross.jpg" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;" width="300"/></picture>
+<div class="product-hover-overlay">
+<span class="product-hover-name">Rose Gold Infinity Cross</span>
+<a class="btn btn-gold" href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Rose+Gold+Infinity+Cross." rel="noopener" style="font-size:.72rem;padding:.6rem 1.1rem" target="_blank">Inquire →</a>
+</div>
+</div>
+<div class="product-info">
+<div class="product-name">Rose Gold Infinity Cross</div>
+<div class="product-meta label-mono">Rose Gold · Diamond Accents</div>
+<div class="product-badges">
+<span class="pill pill-white" style="font-size:.58rem">Diamond</span>
+<span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
+</div>
+</div>
+</article>
+<!-- Piece 23 -->
+<article class="product-card card reveal reveal-delay-1" data-tags="pendant all">
+<div class="product-img jewel-image-wrap">
+<picture><source srcset="img/necklace-geometric.webp" type="image/webp"/><img alt="Modernist Diamond Geometric" decoding="async" height="800" loading="lazy" src="img/necklace-geometric.jpg" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;" width="452"/></picture>
+<div class="product-hover-overlay">
+<span class="product-hover-name">Modernist Diamond Geometric</span>
+<a class="btn btn-gold" href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Modernist+Diamond+Geometric." rel="noopener" style="font-size:.72rem;padding:.6rem 1.1rem" target="_blank">Inquire →</a>
+</div>
+</div>
+<div class="product-info">
+<div class="product-name">Modernist Diamond Geometric</div>
+<div class="product-meta label-mono">Platinum Setting · Brilliant Diamonds</div>
+<div class="product-badges">
+<span class="pill pill-white" style="font-size:.58rem">Diamond</span>
+<span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
+</div>
+</div>
+</article>
+<!-- Piece 24 -->
+<article class="product-card card reveal reveal-delay-2" data-tags="pendant all">
+<div class="product-img jewel-image-wrap">
+<picture><source srcset="img/ruby-pendant-stock.webp" type="image/webp"/><img alt="Heritage Ruby Pendant" decoding="async" height="350" loading="lazy" src="img/ruby-pendant-stock.jpg" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;" width="625"/></picture>
+<div class="product-hover-overlay">
+<span class="product-hover-name">Heritage Ruby Pendant</span>
+<a class="btn btn-gold" href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Heritage+Ruby+Pendant." rel="noopener" style="font-size:.72rem;padding:.6rem 1.1rem" target="_blank">Inquire →</a>
+</div>
+</div>
+<div class="product-info">
+<div class="product-name">Heritage Ruby Pendant</div>
+<div class="product-meta label-mono">Gold · Hand-set Ruby</div>
+<div class="product-badges">
+<span class="pill pill-ruby" style="font-size:.58rem">Ruby</span>
+<span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
+</div>
+</div>
+</article>
+<!-- Piece 25 -->
+<article class="product-card card reveal" data-tags="pendant all">
+<div class="product-img jewel-image-wrap">
+<picture><source srcset="img/pendants-stock.webp" type="image/webp"/><img alt="Classic Kashmiri Pendant" decoding="async" height="800" loading="lazy" src="img/pendants-stock.png" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;" width="800"/></picture>
+<div class="product-hover-overlay">
+<span class="product-hover-name">Classic Kashmiri Pendant</span>
+<a class="btn btn-gold" href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Classic+Kashmiri+Pendant." rel="noopener" style="font-size:.72rem;padding:.6rem 1.1rem" target="_blank">Inquire →</a>
+</div>
+</div>
+<div class="product-info">
+<div class="product-name">Classic Kashmiri Pendant</div>
+<div class="product-meta label-mono">Silver · Traditional Kashmiri Art</div>
+<div class="product-badges">
+<span class="pill pill-white" style="font-size:.58rem">Kashmiri</span>
+<span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
+</div>
+</div>
+</article>
+<!-- Piece 26 -->
+<article class="product-card card reveal" data-tags="bangle all">
+<div class="product-img jewel-image-wrap">
+<picture><source srcset="img/bangle-silver-ornate.webp" type="image/webp"/><img alt="Ornate Floral Silver Bangle" decoding="async" height="800" loading="lazy" src="img/bangle-silver-ornate.jpg" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;" width="735"/></picture>
+<div class="product-hover-overlay">
+<span class="product-hover-name">Ornate Floral Silver Bangle</span>
+<a class="btn btn-gold" href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Ornate+Floral+Silver+Bangle." rel="noopener" style="font-size:.72rem;padding:.6rem 1.1rem" target="_blank">Inquire →</a>
+</div>
+</div>
+<div class="product-info">
+<div class="product-name">Ornate Floral Silver Bangle</div>
+<div class="product-meta label-mono">Silver Setting · Hand-carved Floral Design</div>
+<div class="product-badges">
+<span class="pill pill-white" style="font-size:.58rem">Silver</span>
+<span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
+</div>
+</div>
+</article>
+<!-- Piece 27 -->
+<article class="product-card card reveal reveal-delay-1" data-tags="bangle all">
+<div class="product-img jewel-image-wrap">
+<picture><source srcset="img/bangle-silver-pair.webp" type="image/webp"/><img alt="Silver Beaded Bangle Pair" decoding="async" height="495" loading="lazy" src="img/bangle-silver-pair.jpg" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;" width="800"/></picture>
+<div class="product-hover-overlay">
+<span class="product-hover-name">Silver Beaded Bangle Pair</span>
+<a class="btn btn-gold" href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Silver+Beaded+Bangle+Pair." rel="noopener" style="font-size:.72rem;padding:.6rem 1.1rem" target="_blank">Inquire →</a>
+</div>
+</div>
+<div class="product-info">
+<div class="product-name">Silver Beaded Bangle Pair</div>
+<div class="product-meta label-mono">Sterling Silver · Beaded Detail</div>
+<div class="product-badges">
+<span class="pill pill-white" style="font-size:.58rem">Silver</span>
+<span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
+</div>
+</div>
+</article>
+<!-- Piece 28 -->
+<article class="product-card card reveal reveal-delay-2" data-tags="bangle all">
+<div class="product-img jewel-image-wrap">
+<picture><source srcset="img/bangle-silver-statement.webp" type="image/webp"/><img alt="Statement Ornate Bangle" decoding="async" height="800" loading="lazy" src="img/bangle-silver-statement.jpg" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;" width="757"/></picture>
+<div class="product-hover-overlay">
+<span class="product-hover-name">Statement Ornate Bangle</span>
+<a class="btn btn-gold" href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Statement+Ornate+Bangle." rel="noopener" style="font-size:.72rem;padding:.6rem 1.1rem" target="_blank">Inquire →</a>
+</div>
+</div>
+<div class="product-info">
+<div class="product-name">Statement Ornate Bangle</div>
+<div class="product-meta label-mono">Heavy Silver · Intricate Leaf Pattern</div>
+<div class="product-badges">
+<span class="pill pill-white" style="font-size:.58rem">Silver</span>
+<span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
+</div>
+</div>
+</article>
+<!-- Piece 29 -->
+<article class="product-card card reveal" data-tags="bangle all">
+<div class="product-img jewel-image-wrap">
+<picture><source srcset="img/bangles-stock.webp" type="image/webp"/><img alt="Heritage Legacy Bangle" decoding="async" height="800" loading="lazy" src="img/bangles-stock.png" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;" width="800"/></picture>
+<div class="product-hover-overlay">
+<span class="product-hover-name">Heritage Legacy Bangle</span>
+<a class="btn btn-gold" href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Heritage+Legacy+Bangle." rel="noopener" style="font-size:.72rem;padding:.6rem 1.1rem" target="_blank">Inquire →</a>
+</div>
+</div>
+<div class="product-info">
+<div class="product-name">Heritage Legacy Bangle</div>
+<div class="product-meta label-mono">Traditional Craft · Heritage Design</div>
+<div class="product-badges">
+<span class="pill pill-white" style="font-size:.58rem">Silver</span>
+<span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
+</div>
+</div>
+</article>
+<!-- Piece 30 -->
+<article class="product-card card reveal reveal-delay-1" data-tags="bangle all">
+<div class="product-img jewel-image-wrap">
+<picture><source srcset="img/gallery-bangle-silver.webp" type="image/webp"/><img alt="Traditional Kashmiri Bangle" decoding="async" height="448" loading="lazy" src="img/gallery-bangle-silver.jpg" style="object-fit: contain; padding: 1.5rem; background: var(--bg-card); width: 100%; height: 100%;" width="800"/></picture>
+<div class="product-hover-overlay">
+<span class="product-hover-name">Traditional Kashmiri Bangle</span>
+<a class="btn btn-gold" href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+the+Traditional+Kashmiri+Bangle." rel="noopener" style="font-size:.72rem;padding:.6rem 1.1rem" target="_blank">Inquire →</a>
+</div>
+</div>
+<div class="product-info">
+<div class="product-name">Traditional Kashmiri Bangle</div>
+<div class="product-meta label-mono">Heritage Silver · Signature Kashmiri Art</div>
+<div class="product-badges">
+<span class="pill pill-white" style="font-size:.58rem">Kashmiri</span>
+<span class="pill pill-white" style="font-size:.58rem">One of a Kind</span>
+</div>
+</div>
+</article>
+</div><!-- /product-grid -->
+<!-- Custom CTA -->
+<div class="custom-cta-band reveal" style="margin-top:5rem">
+<div class="custom-cta-text">
+<h3 class="display-md" style="color:var(--gold);margin-bottom:.75rem">Can't find what you're looking for?</h3>
+<p style="color:var(--muted);font-size:.95rem;line-height:1.8">We create bespoke pieces — your stone, your design, your metal. Typically 2–4 weeks from our Artisan Boutique atelier.</p>
+</div>
+<a class="btn btn-whatsapp" href="https://wa.me/919881287132?text=Hello%2C+I%27m+interested+in+a+specific+piece+from+your+collection+and+would+like+to+inquire." rel="noopener" target="_blank">Start a Custom Conversation →</a>
+</div>
+</div>
 </section>
-
-<script src="js/shared.js?v=2.2"></script>
-<script src="js/main.js?v=2.2"></script>
+<script src="js/shared.js?v=2.2" defer></script>
+<script src="js/main.js?v=2.2" defer></script>
 <script>
   injectNavbar('collections.html');
   injectWhatsApp("I'm interested in a specific piece from your collection.");
@@ -626,5 +664,15 @@
     if (matchTab) matchTab.click();
   }
 </script>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+        .catch(err => console.warn('SW failed:', err));
+    });
+  }
+</script>
+
 </body>
 </html>
