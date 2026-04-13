@@ -374,3 +374,7 @@ button { cursor: pointer; min-height: 44px; border: none; background: none; }
   border-radius: 4px;
 }
 *:focus:not(:focus-visible) { outline: none; }
+
+
+/* Override jewel-image-wrap for strict containment so product images zoom out perfectly */
+.insta-item.jewel-image-wrap img { object-fit: contain !important; }

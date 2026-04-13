@@ -151,7 +151,7 @@
 .gem-card-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform var(--transition-slow);
 }
 
@@ -407,7 +407,7 @@
 }
 
 .insta-item { aspect-ratio: 1; overflow: hidden; }
-.insta-item img { width: 100%; height: 100%; object-fit: cover; }
+.insta-item img { width: 100%; height: 100%; object-fit: contain; }
 
 /* ─── Utility ───────────────────────────────────── */
 .text-center { text-align: center; }
