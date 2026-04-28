@@ -105,7 +105,7 @@ function injectFooter() {
       </div>
       <div class="footer-bottom">
         <span class="footer-bottom-text">© 2025 Exotic Collection · All rights reserved</span>
-        <span class="footer-bottom-text">Made with love from <a href="https://quantamtechai.org" target="_blank" rel="noopener" style="color:var(--gold)">Quantum Tech AI</a> ♥</span>
+        <span class="footer-bottom-text">Made with love from <a href="https://quantumtechai.org" target="_blank" rel="noopener" style="color:var(--gold)">Quantum Tech AI</a> ♥</span>
         <span class="footer-bottom-text"><a href="#" style="color:var(--muted)">Privacy</a></span>
       </div>
     </div>
